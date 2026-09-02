@@ -4,7 +4,31 @@
 
 Este repositorio funciona como un coach guiado. No necesitas Terminal ni Claude Code. Trabajarás con el PDF de visión que ya revisaste, identificarás bloqueos y expectativas, decidirás si tu solución necesita **IA, reglas IF, un sistema híbrido o todavía no debe automatizarse**, y después construirás harness, memoria, Skill y pruebas.
 
-## Arranque en seis pasos
+## Elige tu actividad
+
+| Si estás en… | Empieza aquí | Frase de arranque |
+|---|---|---|
+| **Sesión 2 · Diseñar el agente correcto** | Sigue los seis pasos de esta página. | `Inicia mi ruta AI Agent Opt.` |
+| **Sesión 3 · Probar el workflow** | Descarga [`dist/s3-kit.zip`](dist/s3-kit.zip), cópialo en tu carpeta de S2 y abre [`s3-kit/EMPIEZA-S3-AQUI.md`](s3-kit/EMPIEZA-S3-AQUI.md). | `Inicia mi sesión 3.` |
+
+> **No abras un Project nuevo para S3.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados de S2.
+
+## Outcomes observables de S2
+
+| Outcome | Evidencia que tendrás |
+|---|---|
+| **Comprender la automatización** | Resumen de visión que separa hechos, inferencias y faltantes. |
+| **Diagnosticar bloqueos y expectativas** | Causas de datos, reglas, permisos, proceso o alcance. |
+| **Elegir la arquitectura correcta** | Veredicto `IF`, `IA`, `híbrido` o `no automatizar todavía`, con evidencia. |
+| **Reducir a un MVP seguro** | Alcance, no-alcance, riesgos y decisión humana. |
+| **Construir el harness** | Objetivo, trigger, fuentes, pasos, herramientas, restricciones, output, checker y fallback. |
+| **Diseñar memoria controlada** | Fuente de verdad, hechos estables, datos prohibidos y aprobación de cambios. |
+| **Definir una capacidad reutilizable** | Skill válido cuando aporta valor, o decisión explícita de no crearlo cuando basta IF. |
+| **Probar antes de confiar** | Casos normal, faltante, ambiguo e inseguro con `PASS`, `FAIL` o `BLOQUEADO`. |
+
+Estos outcomes son la entrada de S3: ahí el agente debe demostrar que puede ejecutar el workflow, explicar qué hizo y fallar correctamente.
+
+## S2 · Arranque en seis pasos
 
 | Paso | Acción |
 |---:|---|
@@ -50,7 +74,7 @@ La primera corrida termina en un **borrador revisable**. No envía, publica, com
 
 ## Para el facilitador
 
-Abre [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para el encuadre, tiempos y señales de intervención. La ruta rápida para los participantes está en [`RUTA-EN-VIVO.md`](RUTA-EN-VIVO.md).
+Abre [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para S2 y [`s3-kit/GUIA-FACILITADOR-S3.md`](s3-kit/GUIA-FACILITADOR-S3.md) para el reliability lab. Las rutas rápidas para participantes están en [`RUTA-EN-VIVO.md`](RUTA-EN-VIVO.md) y [`s3-kit/EMPIEZA-S3-AQUI.md`](s3-kit/EMPIEZA-S3-AQUI.md).
 
 ## Referencias
 
