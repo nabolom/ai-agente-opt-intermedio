@@ -1,0 +1,19 @@
+# Input y trabajo personal
+00-INPUT/*.pdf
+04-SALIDAS/*
+!04-SALIDAS/README.md
+
+# Credenciales y secretos
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+secrets/
+
+# Sistema y temporales
+.DS_Store
+Thumbs.db
+*.tmp
+~$*
+__pycache__/
