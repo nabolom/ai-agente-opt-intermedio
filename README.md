@@ -2,16 +2,25 @@
 
 > **Abre tu PDF, entiende tu automatización y construye el agente correcto desde Cowork.**
 
-Este repositorio funciona como un coach guiado. No necesitas Terminal ni Claude Code. Trabajarás con el PDF de visión que ya revisaste, identificarás bloqueos y expectativas, decidirás si tu solución necesita **IA, reglas IF, un sistema híbrido o todavía no debe automatizarse**, y después construirás harness, memoria, Skill y pruebas.
+Este repositorio acompaña tres sesiones conectadas. En S1 documentas tu proceso y generas el PDF de entrada; en S2 Cowork cuestiona ese PDF y diseña el agente correcto; en S3 ejecutas y pruebas el workflow. No necesitas Terminal ni Claude Code.
 
 ## Elige tu actividad
 
 | Si estás en… | Empieza aquí | Frase de arranque |
 |---|---|---|
+| **Sesión 1 · Mapear el proceso** | Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) y completa [Cloud para Automatización](https://my-automation.bolt.host/). | Outcome: `mi-automatizacion.pdf` |
 | **Sesión 2 · Diseñar el agente correcto** | Sigue los seis pasos de esta página. | `Inicia mi ruta AI Agent Opt.` |
-| **Sesión 3 · Probar el workflow** | Descarga [`dist/s3-kit.zip`](dist/s3-kit.zip), cópialo en tu carpeta de S2 y abre [`s3-kit/EMPIEZA-S3-AQUI.md`](s3-kit/EMPIEZA-S3-AQUI.md). | `Inicia mi sesión 3.` |
+| **Sesión 3 · Probar el workflow** | Pulsa **[Descargar `s3-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s3-kit.zip)**, cópialo en tu carpeta de S2 y abre [`s3-kit/EMPIEZA-S3-AQUI.md`](s3-kit/EMPIEZA-S3-AQUI.md). | `Inicia mi sesión 3.` |
 
 > **No abras un Project nuevo para S3.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados de S2.
+
+## Outcome observable de S1
+
+| Entregable | Contenido | Uso en S2 |
+|---|---|---|
+| **PDF de mapa de proceso** | Nombre, entradas y fuentes, herramientas, output y destinatarios, intervención manual, juicio humano y MVP propuesto. | Cowork lo trata como una hipótesis: separa hechos e inferencias, identifica bloqueos y decide `IF`, `IA`, `híbrido` o `no automatizar todavía`. |
+
+Para generarlo, completa los siete pasos en [my-automation.bolt.host](https://my-automation.bolt.host/), pulsa **Descargar PDF** y selecciona **Guardar como PDF** en el navegador. Consulta [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md).
 
 ## Outcomes observables de S2
 
@@ -33,7 +42,7 @@ Estos outcomes son la entrada de S3: ahí el agente debe demostrar que puede eje
 | Paso | Acción |
 |---:|---|
 | 1 | En GitHub, pulsa **Code → Download ZIP** y descomprime la carpeta. |
-| 2 | Copia tu PDF revisado dentro de [`00-INPUT/`](00-INPUT/README.md). No uses información que no puedas compartir. |
+| 2 | Copia el PDF generado en S1 dentro de [`00-INPUT/`](00-INPUT/README.md). Si no lo tienes, genéralo primero desde [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md). No uses información que no puedas compartir. |
 | 3 | Abre Claude Desktop → **Cowork → Projects → `+` → Use an existing folder** y elige esta carpeta. |
 | 4 | Pega [`INSTRUCCIONES-PROJECT.md`](INSTRUCCIONES-PROJECT.md) en las instrucciones del Project. |
 | 5 | Instala `dist/ai-agent-opt-coach.zip` desde **Customize → Skills** y actívalo.[1] |
@@ -74,7 +83,7 @@ La primera corrida termina en un **borrador revisable**. No envía, publica, com
 
 ## Para el facilitador
 
-Abre [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para S2 y [`s3-kit/GUIA-FACILITADOR-S3.md`](s3-kit/GUIA-FACILITADOR-S3.md) para el reliability lab. Las rutas rápidas para participantes están en [`RUTA-EN-VIVO.md`](RUTA-EN-VIVO.md) y [`s3-kit/EMPIEZA-S3-AQUI.md`](s3-kit/EMPIEZA-S3-AQUI.md).
+Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) para el outcome de S1, [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para S2 y [`s3-kit/GUIA-FACILITADOR-S3.md`](s3-kit/GUIA-FACILITADOR-S3.md) para el reliability lab. La teoría sugerida para S3 está en [`s3-kit/TEORIA-S3.md`](s3-kit/TEORIA-S3.md).
 
 ## Referencias
 

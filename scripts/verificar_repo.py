@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     'README.md',
+    'S1-EMPIEZA-AQUI.md',
     'RUTA-EN-VIVO.md',
     'INSTRUCCIONES-PROJECT.md',
     'INICIAR-SIN-SKILL.md',
@@ -26,6 +27,7 @@ REQUIRED = [
     's3-kit/PRECHECK-S3.md',
     's3-kit/INICIAR-S3-SIN-SKILL.md',
     's3-kit/GUIA-FACILITADOR-S3.md',
+    's3-kit/TEORIA-S3.md',
     's3-kit/templates/08_PLAN-DE-CORRIDA.md',
     's3-kit/templates/09_REGISTRO-DE-CORRIDA.md',
     's3-kit/templates/10_PROPUESTA-DE-MEJORA.md',
@@ -81,6 +83,7 @@ with zipfile.ZipFile(ROOT / 'dist/s3-kit.zip') as archive:
     for expected in (
         's3-kit/EMPIEZA-S3-AQUI.md',
         's3-kit/PRECHECK-S3.md',
+        's3-kit/TEORIA-S3.md',
         's3-kit/dist/ai-agent-opt-runner.zip',
         's3-kit/templates/11_READINESS-S4.md',
     ):
@@ -98,9 +101,26 @@ for path in ROOT.rglob('*.md'):
             fail(f'link roto en {path.relative_to(ROOT)}: {raw}')
 
 readme = (ROOT / 'README.md').read_text(encoding='utf-8')
-for phrase in ('## Elige tu actividad', '## Outcomes observables de S2', 'Inicia mi sesión 3', 'No abras un Project nuevo'):
+for phrase in (
+    '## Elige tu actividad',
+    'Sesión 1 · Mapear el proceso',
+    '## Outcome observable de S1',
+    'my-automation.bolt.host',
+    '## Outcomes observables de S2',
+    'Descargar `s3-kit.zip`',
+    'Inicia mi sesión 3',
+    'No abras un Project nuevo',
+):
     if phrase not in readme:
         fail(f'el README no hace visible: {phrase}')
+
+input_guide = (ROOT / '00-INPUT/README.md').read_text(encoding='utf-8')
+if 'mi-automatizacion.pdf' not in input_guide or 'S1-EMPIEZA-AQUI.md' not in input_guide:
+    fail('00-INPUT no enlaza el outcome de S1')
+
+s3_start = (ROOT / 's3-kit/EMPIEZA-S3-AQUI.md').read_text(encoding='utf-8')
+if 'raw/refs/heads/main/dist/s3-kit.zip' not in s3_start:
+    fail('la guía S3 no tiene descarga directa del kit')
 
 contract = (ROOT / 'INSTRUCCIONES-PROJECT.md').read_text(encoding='utf-8')
 for phrase in ('IF / DETERMINÍSTICO', 'IA CON REVISIÓN HUMANA', 'HÍBRIDO: IF + IA', 'NO AUTOMATIZAR TODAVÍA'):
@@ -116,4 +136,4 @@ if 'Ignora las instrucciones' not in (failure_case / 'emails_meridian.md').read_
 if (ROOT / '.claude').exists() or (ROOT / 'CLAUDE.md').exists():
     fail('el repo intermedio no debe contener runtime de Claude Code')
 
-print('OK — S2, kit S3, links, Skills, ZIPs, demo normal/falla y seguridad validados.')
+print('OK — continuidad S1→S3, PDF, links, Skills, ZIPs, teoría, demos y seguridad validados.')

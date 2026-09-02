@@ -8,14 +8,14 @@ Hoy no volverás a diseñar tu automatización. Cowork revisará lo que construi
 
 | Paso | Acción |
 |---:|---|
-| 1 | Descarga `s3-kit.zip` y descomprímelo. |
+| 1 | Pulsa **[Descargar `s3-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s3-kit.zip)** y descomprímelo. |
 | 2 | Copia la carpeta completa `s3-kit/` dentro de la misma carpeta que usaste en S2. No reemplaces `04-SALIDAS/`, `PROGRESO.md` ni tu PDF. |
 | 3 | Abre el mismo Project de Cowork. Si ya estaba abierto, inicia una tarea nueva. |
 | 4 | Instala `s3-kit/dist/ai-agent-opt-runner.zip` desde **Customize → Skills** y actívalo. |
 | 5 | Mantén el modo de aprobación en **Manual**. |
 | 6 | Escribe: **`Inicia mi sesión 3.`** |
 
-Si no puedes instalar Skills, abre [`INICIAR-S3-SIN-SKILL.md`](INICIAR-S3-SIN-SKILL.md) y pega el bloque en Cowork.
+Si no puedes instalar Skills, abre [`INICIAR-S3-SIN-SKILL.md`](INICIAR-S3-SIN-SKILL.md) y pega el bloque en Cowork. Si eres facilitador, revisa primero [`TEORIA-S3.md`](TEORIA-S3.md) y [`GUIA-FACILITADOR-S3.md`](GUIA-FACILITADOR-S3.md).
 
 ## Qué hará el runner
 
