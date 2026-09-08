@@ -11,6 +11,9 @@ Este repositorio acompaña tres sesiones conectadas. En S1 documentas tu proceso
 | **Sesión 1 · Mapear el proceso** | Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) y completa [Cloud para Automatización](https://my-automation.bolt.host/). | Outcome: `mi-automatizacion.pdf` |
 | **Sesión 2 · Diseñar el agente correcto** | Sigue los seis pasos de esta página. | `Inicia mi ruta AI Agent Opt.` |
 | **Sesión 3 · Probar el workflow** | Pulsa **[Descargar `s3-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s3-kit.zip)**, cópialo en tu carpeta de S2 y abre [`s3-kit/EMPIEZA-S3-AQUI.md`](s3-kit/EMPIEZA-S3-AQUI.md). | `Inicia mi sesión 3.` |
+| **Sesión 3 · Cortar el proceso paso por paso** | **[Descarga `s3-rutas-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/s3-rutas/dist/s3-rutas-kit.zip)** y sigue [`s3-rutas/INSTALAR-S3-RUTAS.md`](s3-rutas/INSTALAR-S3-RUTAS.md). | `corta mi proceso paso por paso` |
+
+> **Ruta oficial para esta edición:** usa **Sesión 3 · Cortar el proceso paso por paso**. `s3-kit/` se conserva intacto como laboratorio posterior de confiabilidad.
 
 > **No abras un Project nuevo para S3.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados de S2.
 
