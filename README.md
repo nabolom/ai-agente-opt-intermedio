@@ -14,6 +14,8 @@ Este repositorio acompaña tres sesiones conectadas. En S1 documentas tu proceso
 | **Sesión 3 · Cortar el proceso paso por paso** | **[Descarga `s3-rutas-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/s3-rutas/dist/s3-rutas-kit.zip)** y sigue [`s3-rutas/INSTALAR-S3-RUTAS.md`](s3-rutas/INSTALAR-S3-RUTAS.md). | `corta mi proceso paso por paso` |
 
 > **Ruta oficial para esta edición:** usa **Sesión 3 · Cortar el proceso paso por paso**. `s3-kit/` se conserva intacto como laboratorio posterior de confiabilidad.
+>
+> **Antes de iniciar en Cowork:** agrega al final de las instrucciones de tu Project el bloque de [`s3-rutas/INSTRUCCIONES-COWORK-S3.md`](s3-rutas/INSTRUCCIONES-COWORK-S3.md). Esto permite continuar por fases y guarda el seguimiento en `s3-rutas/03-SALIDAS/PROGRESO-S3.md`, sin tocar el progreso de S2.
 
 > **No abras un Project nuevo para S3.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados de S2.
 

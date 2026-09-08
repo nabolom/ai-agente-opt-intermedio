@@ -19,16 +19,29 @@ Hoy lo abres paso por paso. Cuando lo hagas, es muy probable que descubras que t
 | 3 | Trabajas tu ruta durante 60 minutos. Reloj en [`02-RUTAS/BLOQUE-60-MIN.md`](02-RUTAS/BLOQUE-60-MIN.md). |
 | 4 | Guardas tus salidas en [`03-SALIDAS/`](03-SALIDAS/README.md). |
 
-## Cómo empiezas el bloque
+## Antes de empezar · activa el seguimiento de S3
+
+1. Mantén el mismo Project de Cowork que utilizaste en S2.
+2. Abre [`INSTRUCCIONES-COWORK-S3.md`](INSTRUCCIONES-COWORK-S3.md).
+3. Copia su bloque de instrucciones y **agrégalo al final** de las instrucciones actuales del Project. No reemplaces las de S2.
+4. Guarda los cambios, empieza una tarea nueva y escribe:
+
+   ```text
+   Inicia mi S3 Rutas.
+   ```
+
+Cowork debe confirmar que ve `s3-rutas/`, localizar tu `02_DECISION-IA-IF.md` y decirte en qué fase empiezas. El seguimiento queda separado en [`03-SALIDAS/PROGRESO-S3.md`](03-SALIDAS/PROGRESO-S3.md); no modifica `PROGRESO.md` ni los outputs de S2.
+
+## Cuando Cowork te indique que cortes el proceso
 
 1. Instala [`02-RUTAS/dist/corte-de-pasos.zip`](02-RUTAS/dist/corte-de-pasos.zip) desde **Customize → Skills → + Create skill → Upload a skill** y actívalo. El archivo fuente está en [`skill_corte-de-pasos.md`](02-RUTAS/skill_corte-de-pasos.md).
 2. Escribe en el chat, exactamente:
 
-   ```
+   ```text
    corta mi proceso paso por paso
    ```
 
-3. El agente te va a preguntar paso por paso. **Las etiquetas las pones tú.** Él lleva la cuenta y hace la aritmética.
+3. El agente te preguntará paso por paso. **Las etiquetas las pones tú.** Cowork lleva la cuenta, actualiza el seguimiento después de tu confirmación y hace la aritmética.
 
 Si prefieres llenar la tabla a mano, usa [`02-RUTAS/PLANTILLA-tabla-de-pasos.md`](02-RUTAS/PLANTILLA-tabla-de-pasos.md). Da lo mismo — lo que importa es que las decisiones sean tuyas.
 
