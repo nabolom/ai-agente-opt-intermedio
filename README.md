@@ -2,7 +2,7 @@
 
 > **Abre tu PDF, entiende tu automatización y construye el agente correcto desde Cowork.**
 
-Este repositorio acompaña tres sesiones conectadas. En S1 documentas tu proceso y generas el PDF de entrada; en S2 Cowork cuestiona ese PDF y diseña el agente correcto; en S3 ejecutas y pruebas el workflow. No necesitas Terminal ni Claude Code.
+Este repositorio acompaña cuatro sesiones conectadas. En S1 documentas tu proceso y generas el PDF de entrada; en S2 Cowork cuestiona ese PDF y diseña el agente correcto; en S3 cortas y construyes el workflow; en S4 lo encadenas, marcas su frontera y lo enciendes. No necesitas Terminal ni Claude Code.
 
 ## Elige tu actividad
 
@@ -11,6 +11,7 @@ Este repositorio acompaña tres sesiones conectadas. En S1 documentas tu proceso
 | **Sesión 1 · Mapear el proceso** | Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) y completa [Cloud para Automatización](https://my-automation.bolt.host/). | Outcome: `mi-automatizacion.pdf` |
 | **Sesión 2 · Diseñar el agente correcto** | Sigue los seis pasos de esta página. | `Inicia mi ruta AI Agent Opt.` |
 | **Sesión 3 · Cortar el proceso paso por paso** | **[Descarga `s3-rutas-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/s3-rutas/dist/s3-rutas-kit.zip)**, instala `s3-rutas-coach.zip` y sigue [`s3-rutas/INSTALAR-S3-RUTAS.md`](s3-rutas/INSTALAR-S3-RUTAS.md). | `Inicia mi S3 Rutas.` |
+| **Sesión 4 · Encadenar y encender** | Abre [`s4-kit/EMPIEZA-S4-AQUI.md`](s4-kit/EMPIEZA-S4-AQUI.md). | `procesa [tu proceso]` |
 
 > **Antes de iniciar en Cowork:** no cambies las reglas del Project. Instala el único Skill de la sesión, `s3-rutas/02-RUTAS/dist/s3-rutas-coach.zip`; este guía las fases y guarda el seguimiento en `s3-rutas/03-SALIDAS/PROGRESO-S3.md`, sin tocar S2.
 
@@ -89,7 +90,7 @@ La primera corrida termina en un **borrador revisable**. No envía, publica, com
 
 ## Para el facilitador
 
-Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) para el outcome de S1, [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para S2 y [`s3-kit/GUIA-FACILITADOR-S3.md`](s3-kit/GUIA-FACILITADOR-S3.md) para el reliability lab. La teoría sugerida para S3 está en [`s3-kit/TEORIA-S3.md`](s3-kit/TEORIA-S3.md).
+Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) para el outcome de S1, [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para S2, [`s3-rutas/GUIA-FACILITADOR-RUTAS.md`](s3-rutas/GUIA-FACILITADOR-RUTAS.md) para S3 y [`s4-kit/GUIA-FACILITADOR-S4.md`](s4-kit/GUIA-FACILITADOR-S4.md) para S4. El laboratorio anterior [`s3-kit/`](s3-kit/EMPIEZA-S3-AQUI.md) se conserva como práctica posterior de confiabilidad.
 
 ## Referencias
 

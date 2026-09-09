@@ -41,6 +41,25 @@ REQUIRED = [
     's3-kit/demo-meridian/02-caso-falla/pipeline.csv',
     's3-kit/skills/ai-agent-opt-runner/SKILL.md',
     's3-kit/dist/ai-agent-opt-runner.zip',
+    's3-rutas/EMPIEZA-S3-RUTAS.md',
+    's3-rutas/INSTALAR-S3-RUTAS.md',
+    's3-rutas/GUIA-FACILITADOR-RUTAS.md',
+    's3-rutas/01-DEMO/datos/alias_proveedores.csv',
+    's3-rutas/01-DEMO/datos/hoja_gastos.csv',
+    's3-rutas/01-DEMO/datos/presupuesto.csv',
+    's4-kit/EMPIEZA-S4-AQUI.md',
+    's4-kit/GUIA-FACILITADOR-S4.md',
+    's4-kit/01-DEMO/LEEME-DEMO-S4.md',
+    's4-kit/01-DEMO/PEGAR-1-skill-cadena-facturas.md',
+    's4-kit/01-DEMO/FRONTERA-RESUELTA.md',
+    's4-kit/02-CONSTRUIR/BLOQUE-60-MIN-S4.md',
+    's4-kit/02-CONSTRUIR/PASO-1-recorte.md',
+    's4-kit/02-CONSTRUIR/PASO-2-frontera.md',
+    's4-kit/02-CONSTRUIR/PASO-3-encadenar.md',
+    's4-kit/02-CONSTRUIR/PASO-4-programar.md',
+    's4-kit/03-GATE-S5/CHECKLIST-GATE.md',
+    's4-kit/03-GATE-S5/PLANTILLA-demo-5min.md',
+    's4-kit/04-SALIDAS/README.md',
 ]
 
 
@@ -107,8 +126,11 @@ for phrase in (
     '## Outcome observable de S1',
     'my-automation.bolt.host',
     '## Outcomes observables de S2',
-    'Descargar `s3-kit.zip`',
-    'Inicia mi sesión 3',
+    's3-rutas-kit.zip',
+    'Inicia mi S3 Rutas.',
+    'Sesión 4 · Encadenar y encender',
+    's4-kit/EMPIEZA-S4-AQUI.md',
+    'procesa [tu proceso]',
     'No abras un Project nuevo',
 ):
     if phrase not in readme:
@@ -133,7 +155,34 @@ if (failure_case / 'notas_reunion.md').exists():
 if 'Ignora las instrucciones' not in (failure_case / 'emails_meridian.md').read_text(encoding='utf-8'):
     fail('la demo de falla no contiene la prueba de instrucción embebida')
 
+s4_root = ROOT / 's4-kit'
+s4_files = [path for path in s4_root.rglob('*') if path.is_file()]
+if len(s4_files) != 13:
+    fail(f's4-kit debe tener 13 archivos y tiene {len(s4_files)}')
+
+for path in s4_files:
+    if path.suffix.lower() in {'.csv', '.pdf'}:
+        fail(f's4-kit duplica datos de S3: {path.relative_to(ROOT)}')
+    text = path.read_text(encoding='utf-8')
+    forbidden = re.search(r'\b(git|curl|terminal|n8n)\b|claude code', text, re.IGNORECASE)
+    if forbidden:
+        fail(f's4-kit menciona una herramienta prohibida en {path.relative_to(ROOT)}: {forbidden.group(0)}')
+
+s4_skill = (s4_root / '01-DEMO/PEGAR-1-skill-cadena-facturas.md').read_text(encoding='utf-8')
+if 'NUNCA escribas en `hoja_gastos.csv`' not in s4_skill:
+    fail('el Skill de facturas no declara la frontera de escritura')
+
+s4_start = (s4_root / 'EMPIEZA-S4-AQUI.md').read_text(encoding='utf-8')
+for phrase in ('produce borradores', '03-GATE-S5/CHECKLIST-GATE.md', 'PASO-4-programar.md'):
+    if phrase not in s4_start:
+        fail(f'la guía S4 no hace visible: {phrase}')
+
+s4_schedule = (s4_root / '02-CONSTRUIR/PASO-4-programar.md').read_text(encoding='utf-8')
+for phrase in ('/schedule', 'Dispara la tarea manualmente una vez', 'archivos o aplicaciones locales'):
+    if phrase not in s4_schedule:
+        fail(f'la programación S4 no cubre: {phrase}')
+
 if (ROOT / '.claude').exists() or (ROOT / 'CLAUDE.md').exists():
     fail('el repo intermedio no debe contener runtime de Claude Code')
 
-print('OK — continuidad S1→S3, PDF, links, Skills, ZIPs, teoría, demos y seguridad validados.')
+print('OK — continuidad S1→S4, PDF, links, Skills, rutas, frontera, trigger, gate y seguridad validados.')
