@@ -11,19 +11,17 @@ Tu ruta la define el veredicto de tu `02_DECISION-IA-IF.md`.
 
 **Las cuatro rutas empiezan igual:** la tabla de pasos.
 
-## Dos formas de armarla
+## Cómo armarla
 
-**Con el agente.** Instala [`dist/corte-de-pasos.zip`](dist/corte-de-pasos.zip) desde **Customize → Skills → + Create skill → Upload a skill**, actívalo y escribe en el chat:
+El Skill `s3-rutas-coach` ya instalado te conduce por la tabla cuando escribes:
 
+```text
+Inicia mi S3 Rutas.
 ```
-corta mi proceso paso por paso
-```
 
-Te va a preguntar paso por paso. Las etiquetas las pones tú; él lleva la cuenta y hace la aritmética.
+Te preguntará paso por paso. Las etiquetas las pones tú; Cowork lleva la cuenta, hace la aritmética y registra evidencia solo después de tu confirmación.
 
-**A mano.** Usa [`PLANTILLA-tabla-de-pasos.md`](PLANTILLA-tabla-de-pasos.md).
-
-Da lo mismo cuál elijas. Lo que importa es que las decisiones sean tuyas.
+Si necesitas trabajar sin el Skill, usa [`PLANTILLA-tabla-de-pasos.md`](PLANTILLA-tabla-de-pasos.md) a mano. En ambos caminos las decisiones son tuyas.
 
 ## Si tu veredicto cambia
 

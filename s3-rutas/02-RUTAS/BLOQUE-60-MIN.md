@@ -20,15 +20,17 @@ Cuatro rutas, un solo reloj. Lo que cambia entre rutas es el contenido de las fa
 
 **Todas las rutas hacen lo mismo.**
 
-Instala y activa [`dist/corte-de-pasos.zip`](dist/corte-de-pasos.zip) en Cowork. Después escribe:
+Con `s3-rutas-coach` activo, escribe:
 
+```text
+Inicia mi S3 Rutas.
 ```
-corta mi proceso paso por paso
-```
 
-O llena [`PLANTILLA-tabla-de-pasos.md`](PLANTILLA-tabla-de-pasos.md) a mano. Entre cuatro y ocho pasos, cada uno con tipo y porqué.
+Cowork recuperará tu veredicto y te llevará a la tabla. Entre cuatro y ocho pasos, cada uno con tipo y porqué. Tú defines las etiquetas; el Skill pregunta, cuenta y registra la evidencia confirmada.
 
-Al terminar, cuenta tus pasos de IA y calcula `0.95` elevado a ese número.
+Si trabajas sin el Skill, llena [`PLANTILLA-tabla-de-pasos.md`](PLANTILLA-tabla-de-pasos.md) a mano.
+
+Al terminar, cuenta tus pasos de IA y calcula `0.95` elevado a ese número. Es un modelo didáctico; la evidencia real vendrá de las pruebas.
 
 ---
 

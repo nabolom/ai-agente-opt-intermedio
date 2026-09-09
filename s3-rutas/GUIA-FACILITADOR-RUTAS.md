@@ -17,7 +17,8 @@ Grupo: 6 participantes, todos en Cowork. Sin herramientas externas.
 
 1. Copia `01-DEMO/datos/` a tu computadora y conéctala en Cowork.
 2. Ten `01-DEMO/TABLA-RESUELTA.md` abierto en una ventana que **no** proyectes.
-3. Ten a la mano el `02_DECISION-IA-IF.md` de cada participante. Si alguien no lo trae, siéntalo con `01-DEMO/CASO-DEMO.md` — no lo dejes sin ejercicio.
+3. Verifica que cada participante tenga `s3-rutas/` dentro de su carpeta de S2 y haya instalado `02-RUTAS/dist/s3-rutas-coach.zip`. Nadie debe cambiar las instrucciones del Project.
+4. Ten a la mano el `02_DECISION-IA-IF.md` de cada participante. Si alguien no lo trae, siéntalo con `01-DEMO/CASO-DEMO.md` — no lo dejes sin ejercicio.
 
 ## Los cuatro errores que vas a ver
 
@@ -31,7 +32,7 @@ Grupo: 6 participantes, todos en Cowork. Sin herramientas externas.
 
 ## Por qué no circulas los primeros diez minutos
 
-Con seis personas y cuatro rutas no alcanzas a detectar los umbrales disfrazados uno por uno. El skill `corte-de-pasos` hace la primera pasada en paralelo, y el checkpoint colectivo del minuto 15 hace la segunda en público.
+Con seis personas y cuatro rutas no alcanzas a detectar los umbrales disfrazados uno por uno. El Skill `s3-rutas-coach` hace la primera pasada en paralelo, conserva el seguimiento por fase y el checkpoint colectivo del minuto 15 hace la segunda revisión en público.
 
 Corregir un error frente al grupo le sirve a los seis. Corregirlo circulando le sirve a uno.
 

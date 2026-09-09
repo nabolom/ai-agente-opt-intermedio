@@ -2,59 +2,56 @@
 
 ## Con qué llegas
 
-Tu `02_DECISION-IA-IF.md` de la S2, con un veredicto: **IF, IA, híbrido o no automatizar todavía**.
+Tu `02_DECISION-IA-IF.md` de S2, con un veredicto: **IF, IA, híbrido o no automatizar todavía**.
 
-## La bisagra de hoy
+Ese veredicto describe el proceso completo. Hoy lo abrirás paso por paso para descubrir cuáles partes son reglas, herramientas, decisiones de IA o acciones humanas.
 
-Ese veredicto es del proceso completo. Sirve para decidir si vale la pena, no para construir.
+## Para empezar: solo tres pasos
 
-Hoy lo abres paso por paso. Cuando lo hagas, es muy probable que descubras que tu proceso no es «de IA» — es cinco pasos deterministas y uno o dos donde el sistema realmente decide.
-
-## Los cuatro pasos de la sesión
-
-| Paso | Qué haces |
-|---|---|
-| 1 | Expones tu veredicto en 90 segundos. Plantilla en [`00-EXPOSICION/`](00-EXPOSICION/PLANTILLA-exposicion-90s.md). |
-| 2 | Ves la demo: un proceso híbrido abierto paso por paso, y un paso construido en vivo. |
-| 3 | Trabajas tu ruta durante 60 minutos. Reloj en [`02-RUTAS/BLOQUE-60-MIN.md`](02-RUTAS/BLOQUE-60-MIN.md). |
-| 4 | Guardas tus salidas en [`03-SALIDAS/`](03-SALIDAS/README.md). |
-
-## Antes de empezar · activa el seguimiento de S3
-
-1. Mantén el mismo Project de Cowork que utilizaste en S2.
-2. Abre [`INSTRUCCIONES-COWORK-S3.md`](INSTRUCCIONES-COWORK-S3.md).
-3. Copia su bloque de instrucciones y **agrégalo al final** de las instrucciones actuales del Project. No reemplaces las de S2.
-4. Guarda los cambios, empieza una tarea nueva y escribe:
+1. Coloca la carpeta `s3-rutas/` dentro de la misma carpeta raíz que utilizaste en S2.
+2. En Cowork, instala y activa [`02-RUTAS/dist/s3-rutas-coach.zip`](02-RUTAS/dist/s3-rutas-coach.zip) desde **Customize → Skills → + Create skill → Upload a skill**.
+3. En el mismo Project de S2, empieza una tarea nueva y escribe:
 
    ```text
    Inicia mi S3 Rutas.
    ```
 
-Cowork debe confirmar que ve `s3-rutas/`, localizar tu `02_DECISION-IA-IF.md` y decirte en qué fase empiezas. El seguimiento queda separado en [`03-SALIDAS/PROGRESO-S3.md`](03-SALIDAS/PROGRESO-S3.md); no modifica `PROGRESO.md` ni los outputs de S2.
+**No cambies las instrucciones del Project.** El Skill contiene el recorrido completo de S3 y guarda su avance por separado en [`03-SALIDAS/PROGRESO-S3.md`](03-SALIDAS/PROGRESO-S3.md).
 
-## Cuando Cowork te indique que cortes el proceso
+Cowork debe confirmar que ve `s3-rutas/`, localizar tu `02_DECISION-IA-IF.md` de S2 y decirte cuál es la primera fase pendiente.
 
-1. Instala [`02-RUTAS/dist/corte-de-pasos.zip`](02-RUTAS/dist/corte-de-pasos.zip) desde **Customize → Skills → + Create skill → Upload a skill** y actívalo. El archivo fuente está en [`skill_corte-de-pasos.md`](02-RUTAS/skill_corte-de-pasos.md).
-2. Escribe en el chat, exactamente:
+## Los cuatro momentos de la sesión
 
-   ```text
-   corta mi proceso paso por paso
-   ```
+| Momento | Qué haces |
+|---|---|
+| 1 | Expones tu veredicto en 90 segundos con [`00-EXPOSICION/PLANTILLA-exposicion-90s.md`](00-EXPOSICION/PLANTILLA-exposicion-90s.md). |
+| 2 | Ves la demo: un proceso híbrido abierto paso por paso y un paso construido en vivo. |
+| 3 | Trabajas tu ruta durante 60 minutos con [`02-RUTAS/BLOQUE-60-MIN.md`](02-RUTAS/BLOQUE-60-MIN.md). |
+| 4 | Guardas la evidencia en [`03-SALIDAS/`](03-SALIDAS/README.md). |
 
-3. El agente te preguntará paso por paso. **Las etiquetas las pones tú.** Cowork lleva la cuenta, actualiza el seguimiento después de tu confirmación y hace la aritmética.
+## Qué hará el Skill contigo
 
-Si prefieres llenar la tabla a mano, usa [`02-RUTAS/PLANTILLA-tabla-de-pasos.md`](02-RUTAS/PLANTILLA-tabla-de-pasos.md). Da lo mismo — lo que importa es que las decisiones sean tuyas.
+Cowork avanzará una fase a la vez:
 
-## El entregable, igual para las cuatro rutas
+1. Recuperar y confirmar tu veredicto de S2.
+2. Cortar tu proceso paso por paso.
+3. Elegir la ruta con la evidencia de la tabla.
+4. Construir **un solo paso**.
+5. Probarlo con cinco casos.
+6. Registrar tu número y la primera mejora.
+
+Tú decides las etiquetas y las salidas esperadas. Cowork pregunta, lleva la cuenta y registra evidencia después de tu confirmación.
+
+## Entregable
 
 1. **Tu tabla de pasos etiquetada** — cada paso marcado como IF, IA, herramienta o humano, con su porqué.
-2. **Un paso construido y probado** — el primero de tu ruta, corriendo en Cowork.
+2. **Un paso construido y probado** — el primero de tu ruta, funcionando en Cowork.
 
-Un paso. No el proceso completo. En 60 minutos no da para más y ese recorte es a propósito.
+Un paso, no el proceso completo. Ese recorte es deliberado.
 
 ## Criterio de éxito
 
-Puedes decir en voz alta cuántos pasos de IA tiene tu proceso y por qué cada uno lo es.
+Puedes explicar cuántos pasos de IA tiene tu proceso, por qué cada uno lo es y qué evidencia obtuviste al probar uno.
 
 ## Regla de la sesión
 
