@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     'README.md',
     'S1-EMPIEZA-AQUI.md',
+    'CHEAT-SHEET-S1-S4.md',
     'RUTA-EN-VIVO.md',
     'INSTRUCCIONES-PROJECT.md',
     'INICIAR-SIN-SKILL.md',
@@ -128,6 +129,7 @@ for path in ROOT.rglob('*.md'):
 readme = (ROOT / 'README.md').read_text(encoding='utf-8')
 for phrase in (
     '## Elige tu actividad',
+    'CHEAT-SHEET-S1-S4.md',
     'Sesión 1 · Mapear el proceso',
     '## Outcome observable de S1',
     'my-automation.bolt.host',

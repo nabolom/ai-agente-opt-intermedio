@@ -4,6 +4,8 @@
 
 Este repositorio acompaña cuatro sesiones conectadas. En S1 documentas tu proceso y generas el PDF de entrada; en S2 Cowork cuestiona ese PDF y diseña el agente correcto; en S3 cortas y construyes el workflow; en S4 lo encadenas, marcas su frontera y lo enciendes. No necesitas Terminal ni Claude Code.
 
+> **Mapa completo del curso:** consulta la [`CHEAT-SHEET-S1-S4.md`](CHEAT-SHEET-S1-S4.md) para repasar conceptos, outcomes, archivos, frases de arranque, errores comunes y criterios de avance.
+
 ## Elige tu actividad
 
 | Si estás en… | Empieza aquí | Frase de arranque |
