@@ -2,7 +2,7 @@
 
 ## De una idea de automatización a un proceso que corre con límites
 
-**Autor:** Manus AI  
+**Autor:** León Ruiz  
 **Repositorio:** [AI Agente Opt · Intermedio](https://github.com/nabolom/ai-agente-opt-intermedio)
 
 > **La historia completa en una línea:** S1 **mapea** el proceso; S2 **decide** qué arquitectura necesita; S3 **demuestra** un paso con evidencia; S4 **encadena y enciende** una versión mínima segura.
