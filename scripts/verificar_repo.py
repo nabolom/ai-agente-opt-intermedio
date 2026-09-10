@@ -24,6 +24,7 @@ REQUIRED = [
     'skills/ai-agent-opt-coach/SKILL.md',
     'dist/ai-agent-opt-coach.zip',
     'dist/s3-kit.zip',
+    'dist/s4-kit.zip',
     's3-kit/EMPIEZA-S3-AQUI.md',
     's3-kit/PRECHECK-S3.md',
     's3-kit/INICIAR-S3-SIN-SKILL.md',
@@ -137,6 +138,7 @@ for phrase in (
     's3-rutas-kit.zip',
     'Inicia mi S3 Rutas.',
     'Sesión 4 · Encadenar y encender',
+    'dist/s4-kit.zip',
     's4-kit/EMPIEZA-S4-AQUI.md',
     's4-encadenar-coach.zip',
     'Inicia mi S4.',
@@ -169,6 +171,15 @@ s4_files = [path for path in s4_root.rglob('*') if path.is_file()]
 if len(s4_files) != 19:
     fail(f's4-kit debe tener 19 archivos y tiene {len(s4_files)}')
 
+with zipfile.ZipFile(ROOT / 'dist/s4-kit.zip') as archive:
+    packaged = set(archive.namelist())
+    expected = {f's4-kit/{path.relative_to(s4_root).as_posix()}' for path in s4_files}
+    missing = sorted(expected - packaged)
+    if missing:
+        fail(f'el s4-kit.zip no contiene: {", ".join(missing)}')
+    if not all(name == 's4-kit/' or name.startswith('s4-kit/') for name in packaged):
+        fail('el s4-kit.zip no conserva una única carpeta raíz s4-kit/')
+
 for path in s4_files:
     if path.suffix.lower() in {'.csv', '.pdf'}:
         fail(f's4-kit duplica datos de S3: {path.relative_to(ROOT)}')
@@ -195,6 +206,8 @@ for phrase in (
     'Ruta | Condición | Acción',
     'NUNCA programar antes de una corrida manual completa',
     's4-kit/04-SALIDAS/PROGRESO-S4.md',
+    'raw/refs/heads/main/dist/s4-kit.zip',
+    'No reconstruir plantillas ni continuar solo con el Skill',
 ):
     if phrase not in s4_coach:
         fail(f'el coach S4 no cubre: {phrase}')
@@ -214,7 +227,7 @@ for phrase in ('produce borradores', '03-GATE-S5/CHECKLIST-GATE.md', 'PASO-4-pro
         fail(f'la guía S4 no hace visible: {phrase}')
 
 s4_install = (s4_root / 'INSTALAR-COACH-S4.md').read_text(encoding='utf-8')
-for phrase in ('s4-encadenar-coach.zip', 'Inicia mi S4.', 'INICIAR-S4-SIN-SKILL.md'):
+for phrase in ('s4-kit.zip', 'no se instala como Skill', 's4-encadenar-coach.zip', 'Inicia mi S4.', 'INICIAR-S4-SIN-SKILL.md'):
     if phrase not in s4_install:
         fail(f'la instalación del coach S4 no cubre: {phrase}')
 

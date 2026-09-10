@@ -1,8 +1,10 @@
 # Empieza S4 aquí · Que corra sin ti
 
-## Primero instala al coach
+## Primero incorpora la actividad completa
 
-No necesitas interpretar esta carpeta por tu cuenta. Sigue [`INSTALAR-COACH-S4.md`](INSTALAR-COACH-S4.md), instala `dist/s4-encadenar-coach.zip` en Cowork y escribe:
+Si conservas tu Project de S2 y S3, **[descarga `s4-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s4-kit.zip)**, descomprímelo y copia la carpeta `s4-kit/` en la raíz del mismo Project. El ZIP exterior contiene demo, plantillas, salidas, gate y coach; no se instala como Skill.
+
+Después sigue [`INSTALAR-COACH-S4.md`](INSTALAR-COACH-S4.md), instala únicamente `dist/s4-encadenar-coach.zip` en Cowork y escribe:
 
 > **Inicia mi S4.**
 

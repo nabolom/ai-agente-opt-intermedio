@@ -2,9 +2,19 @@
 
 El coach te acompaña durante la actividad. **No es el Skill de tu automatización.** Primero instalas el coach; durante la sesión, el coach te ayudará a construir el Skill de tu propio proceso.
 
-## Antes de empezar
+## Antes de empezar · descarga el paquete completo
 
-Usa el **mismo Project de Cowork** de S2 y S3. No abras otro Project: el coach necesita leer tu tabla de pasos, el paso probado y el número de acierto de S3.
+El ZIP del coach **no contiene la actividad completa**. Primero debes incorporar `s4-kit/` a la misma carpeta que Cowork ya usó en S2 y S3. El ZIP exterior `s4-kit.zip` **no se instala como Skill**; solo se descomprime y se copia.
+
+| Paso | Acción |
+|---:|---|
+| 0.1 | **[Descarga `s4-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s4-kit.zip)**. |
+| 0.2 | Abre Descargas y descomprime el archivo. |
+| 0.3 | Copia la carpeta resultante `s4-kit/`. |
+| 0.4 | Pégala en la raíz de tu Project existente, al mismo nivel que `00-INPUT/`, `04-SALIDAS/` y `s3-rutas/`. |
+| 0.5 | Regresa al **mismo Project de Cowork**. No abras otro. |
+
+No copies `s4-kit/` dentro de `00-INPUT/`, `04-SALIDAS/`, `skills/` o `s3-rutas/`. Tampoco instales `s4-kit.zip` como Skill: es el paquete exterior de la actividad.
 
 Confirma que dentro de la carpeta del Project ves:
 
@@ -19,7 +29,9 @@ ai-agente-opt-intermedio/
 └── ...
 ```
 
-## Instalación
+## Instalación del coach
+
+Solo después de ver `s4-kit/` dentro de tu Project, instala el ZIP interior del coach.
 
 | Paso | Acción |
 |---:|---|

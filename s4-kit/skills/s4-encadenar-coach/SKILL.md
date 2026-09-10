@@ -44,10 +44,11 @@ NUNCA modificar `s3-kit/`, `s3-rutas/`, `00-INPUT/`, `04-SALIDAS/`, `PROGRESO.md
 
 Cuando el usuario escriba `Inicia mi S4` o pida continuar:
 
-1. Confirmar que se ve `s4-kit/`.
-2. Leer `PROGRESO-S4.md` y localizar la primera fase pendiente.
-3. Buscar la tabla de pasos, el paso probado y el número de acierto de S3.
-4. Asignar una ruta y explicarla:
+1. Confirmar que se ve `s4-kit/` y dentro existen `02-CONSTRUIR/`, `03-GATE-S5/` y `04-SALIDAS/PROGRESO-S4.md`.
+2. Si no se ve la carpeta completa, detener el recorrido y explicar: «Instalaste el coach, pero todavía no incorporaste la actividad. Descarga `s4-kit.zip` desde https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s4-kit.zip, descomprímelo y copia la carpeta `s4-kit/` en la raíz de este mismo Project. Después vuelve y escribe `Inicia mi S4`. No abras otro Project.» No reconstruir plantillas ni continuar solo con el Skill.
+3. Leer `PROGRESO-S4.md` y localizar la primera fase pendiente.
+4. Buscar la tabla de pasos, el paso probado y el número de acierto de S3.
+5. Asignar una ruta y explicarla:
 
 | Ruta | Condición | Acción |
 |---|---|---|
