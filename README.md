@@ -11,11 +11,11 @@ Este repositorio acompaña cuatro sesiones conectadas. En S1 documentas tu proce
 | **Sesión 1 · Mapear el proceso** | Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) y completa [Cloud para Automatización](https://my-automation.bolt.host/). | Outcome: `mi-automatizacion.pdf` |
 | **Sesión 2 · Diseñar el agente correcto** | Sigue los seis pasos de esta página. | `Inicia mi ruta AI Agent Opt.` |
 | **Sesión 3 · Cortar el proceso paso por paso** | **[Descarga `s3-rutas-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/s3-rutas/dist/s3-rutas-kit.zip)**, instala `s3-rutas-coach.zip` y sigue [`s3-rutas/INSTALAR-S3-RUTAS.md`](s3-rutas/INSTALAR-S3-RUTAS.md). | `Inicia mi S3 Rutas.` |
-| **Sesión 4 · Encadenar y encender** | Abre [`s4-kit/EMPIEZA-S4-AQUI.md`](s4-kit/EMPIEZA-S4-AQUI.md). | `procesa [tu proceso]` |
+| **Sesión 4 · Encadenar y encender** | Instala [`s4-encadenar-coach.zip`](s4-kit/dist/s4-encadenar-coach.zip) y abre [`s4-kit/EMPIEZA-S4-AQUI.md`](s4-kit/EMPIEZA-S4-AQUI.md). | `Inicia mi S4.` |
 
 > **Antes de iniciar en Cowork:** no cambies las reglas del Project. Instala el único Skill de la sesión, `s3-rutas/02-RUTAS/dist/s3-rutas-coach.zip`; este guía las fases y guarda el seguimiento en `s3-rutas/03-SALIDAS/PROGRESO-S3.md`, sin tocar S2.
 
-> **No abras un Project nuevo para S3.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados de S2.
+> **No abras un Project nuevo para S3 o S4.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados. En S4 instala únicamente `s4-kit/dist/s4-encadenar-coach.zip`; el coach te ayudará a crear un Skill distinto para tu proceso.
 
 ### Material adicional · no usar durante esta S3
 

@@ -4,10 +4,12 @@ Grupo: 6 participantes, todos en Cowork.
 
 ## Antes de la sesión
 
-1. **Prueba una tarea programada en tu máquina.** Créala con `/schedule`, ciérrala, verifica que corrió. Es la pieza que sostiene toda la sesión.
-2. Ten `s3-rutas/01-DEMO/datos/` conectada en Cowork. La demo de hoy la reutiliza.
-3. Ten `01-DEMO/FRONTERA-RESUELTA.md` abierto en una ventana que **no** proyectes.
-4. Identifica de antemano si alguien tiene su proceso casi enteramente dentro de un sistema cerrado. Ese caso necesita recorte a otra rebanada y es mejor resolverlo contigo hoy que frente al grupo el martes.
+1. Confirma que todos pueden instalar `s4-kit/dist/s4-encadenar-coach.zip` y abrir el mismo Project utilizado en S2 y S3.
+2. Proyecta la instrucción **`Inicia mi S4.`** El coach hará el precheck y asignará ruta verde, amarilla o demo antes del bloque individual.
+3. **Prueba una tarea programada en tu máquina.** Créala con `/schedule`, ciérrala, verifica que corrió. Es la pieza que sostiene toda la sesión.
+4. Ten `s3-rutas/01-DEMO/datos/` conectada en Cowork. La demo de hoy la reutiliza.
+5. Ten `01-DEMO/FRONTERA-RESUELTA.md` abierto en una ventana que **no** proyectes.
+6. Identifica de antemano si alguien tiene su proceso casi enteramente dentro de un sistema cerrado. Ese caso necesita recorte a otra rebanada y es mejor resolverlo contigo hoy que frente al grupo el martes.
 
 > **Precisión sobre ejecución:** las tareas que usan conectores y archivos guardados en la cuenta pueden correr de forma remota. Si una tarea necesita archivos o aplicaciones locales, corre localmente y requiere acceso mediante Claude Desktop.
 
@@ -22,6 +24,10 @@ Grupo: 6 participantes, todos en Cowork.
 | Bloque individual | 60 |
 | Cierre y gate | 15 |
 | Pre-work S5 | 10 |
+
+## Cómo intervenir mientras usan el coach
+
+El coach explica una fase, pregunta, propone un borrador y espera confirmación. Intervén únicamente si alguien intenta saltar el gate, confunde el coach con el Skill de su proceso o permanece más de cinco minutos sin poder responder una pregunta. No resuelvas la decisión: devuelve la pregunta y pide evidencia.
 
 ## Los cuatro errores que vas a ver
 

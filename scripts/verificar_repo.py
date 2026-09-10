@@ -60,6 +60,12 @@ REQUIRED = [
     's4-kit/03-GATE-S5/CHECKLIST-GATE.md',
     's4-kit/03-GATE-S5/PLANTILLA-demo-5min.md',
     's4-kit/04-SALIDAS/README.md',
+    's4-kit/04-SALIDAS/PROGRESO-S4.md',
+    's4-kit/INSTALAR-COACH-S4.md',
+    's4-kit/INICIAR-S4-SIN-SKILL.md',
+    's4-kit/skills/s4-encadenar-coach/SKILL.md',
+    's4-kit/skills/s4-encadenar-coach/examples/trigger-tests.md',
+    's4-kit/dist/s4-encadenar-coach.zip',
 ]
 
 
@@ -130,7 +136,8 @@ for phrase in (
     'Inicia mi S3 Rutas.',
     'Sesión 4 · Encadenar y encender',
     's4-kit/EMPIEZA-S4-AQUI.md',
-    'procesa [tu proceso]',
+    's4-encadenar-coach.zip',
+    'Inicia mi S4.',
     'No abras un Project nuevo',
 ):
     if phrase not in readme:
@@ -157,12 +164,14 @@ if 'Ignora las instrucciones' not in (failure_case / 'emails_meridian.md').read_
 
 s4_root = ROOT / 's4-kit'
 s4_files = [path for path in s4_root.rglob('*') if path.is_file()]
-if len(s4_files) != 13:
-    fail(f's4-kit debe tener 13 archivos y tiene {len(s4_files)}')
+if len(s4_files) != 19:
+    fail(f's4-kit debe tener 19 archivos y tiene {len(s4_files)}')
 
 for path in s4_files:
     if path.suffix.lower() in {'.csv', '.pdf'}:
         fail(f's4-kit duplica datos de S3: {path.relative_to(ROOT)}')
+    if path.suffix.lower() == '.zip':
+        continue
     text = path.read_text(encoding='utf-8')
     forbidden = re.search(r'\b(git|curl|terminal|n8n)\b|claude code', text, re.IGNORECASE)
     if forbidden:
@@ -172,10 +181,41 @@ s4_skill = (s4_root / '01-DEMO/PEGAR-1-skill-cadena-facturas.md').read_text(enco
 if 'NUNCA escribas en `hoja_gastos.csv`' not in s4_skill:
     fail('el Skill de facturas no declara la frontera de escritura')
 
+s4_coach = (s4_root / 'skills/s4-encadenar-coach/SKILL.md').read_text(encoding='utf-8')
+if '[TODO' in s4_coach or 'TODO:' in s4_coach:
+    fail('el coach S4 conserva TODOs')
+if not re.search(r'^name:\s*s4-encadenar-coach$', s4_coach, re.MULTILINE):
+    fail('el name del coach S4 es incorrecto')
+for phrase in (
+    'Explicar → preguntar → proponer → confirmar → guardar',
+    'Explícame en una frase qué decidiste y por qué',
+    '## Escalera de ayuda',
+    'Ruta | Condición | Acción',
+    'NUNCA programar antes de una corrida manual completa',
+    's4-kit/04-SALIDAS/PROGRESO-S4.md',
+):
+    if phrase not in s4_coach:
+        fail(f'el coach S4 no cubre: {phrase}')
+
+with zipfile.ZipFile(s4_root / 'dist/s4-encadenar-coach.zip') as archive:
+    names = set(archive.namelist())
+    for expected in (
+        's4-encadenar-coach/SKILL.md',
+        's4-encadenar-coach/examples/trigger-tests.md',
+    ):
+        if expected not in names:
+            fail(f'el ZIP del coach S4 no contiene {expected}')
+
 s4_start = (s4_root / 'EMPIEZA-S4-AQUI.md').read_text(encoding='utf-8')
-for phrase in ('produce borradores', '03-GATE-S5/CHECKLIST-GATE.md', 'PASO-4-programar.md'):
+for phrase in ('produce borradores', '03-GATE-S5/CHECKLIST-GATE.md', 'PASO-4-programar.md', 'Inicia mi S4.', 'INSTALAR-COACH-S4.md'):
     if phrase not in s4_start:
         fail(f'la guía S4 no hace visible: {phrase}')
+
+s4_install = (s4_root / 'INSTALAR-COACH-S4.md').read_text(encoding='utf-8')
+for phrase in ('s4-encadenar-coach.zip', 'Inicia mi S4.', 'INICIAR-S4-SIN-SKILL.md'):
+    if phrase not in s4_install:
+        fail(f'la instalación del coach S4 no cubre: {phrase}')
+
 
 s4_schedule = (s4_root / '02-CONSTRUIR/PASO-4-programar.md').read_text(encoding='utf-8')
 for phrase in ('/schedule', 'Dispara la tarea manualmente una vez', 'archivos o aplicaciones locales'):

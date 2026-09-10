@@ -1,5 +1,13 @@
 # Empieza S4 aquí · Que corra sin ti
 
+## Primero instala al coach
+
+No necesitas interpretar esta carpeta por tu cuenta. Sigue [`INSTALAR-COACH-S4.md`](INSTALAR-COACH-S4.md), instala `dist/s4-encadenar-coach.zip` en Cowork y escribe:
+
+> **Inicia mi S4.**
+
+El coach te explicará una fase a la vez, hará preguntas, propondrá borradores y esperará tu confirmación antes de guardar. No decidirá tu V1 ni tu frontera por ti.
+
 ## Con qué llegas
 
 De la S3: tu tabla de pasos etiquetada, un paso construido y probado, y un número de acierto.
@@ -28,6 +36,8 @@ La versión mínima que corre sola le gana a la versión completa que no corre. 
 Casi todos caen en B o B+C. No es una limitación: para varios ya estaba en su propio mapa de S1.
 
 ## Los cuatro pasos de hoy
+
+El coach te conducirá por estos archivos; no necesitas recorrerlos solo.
 
 | Paso | Archivo |
 |---|---|
