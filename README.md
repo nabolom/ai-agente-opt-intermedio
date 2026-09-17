@@ -2,9 +2,9 @@
 
 > **Abre tu PDF, entiende tu automatización y construye el agente correcto desde Cowork.**
 
-Este repositorio acompaña cuatro sesiones conectadas. En S1 documentas tu proceso y generas el PDF de entrada; en S2 Cowork cuestiona ese PDF y diseña el agente correcto; en S3 cortas y construyes el workflow; en S4 lo encadenas, marcas su frontera y lo enciendes. No necesitas Terminal ni Claude Code.
+Este repositorio acompaña cinco sesiones conectadas. En S1 documentas tu proceso y generas el PDF de entrada; en S2 Cowork cuestiona ese PDF y diseña el agente correcto; en S3 cortas y construyes el workflow; en S4 lo encadenas, marcas su frontera y lo enciendes; en S5 verificas si corrió, auditas el sistema y eliges su siguiente mejora. No necesitas Terminal ni Claude Code.
 
-> **Mapa completo del curso:** consulta la [`CHEAT-SHEET-S1-S4.md`](CHEAT-SHEET-S1-S4.md) para repasar conceptos, outcomes, archivos, frases de arranque, errores comunes y criterios de avance.
+> **Recap de fundamentos S1–S4:** consulta la [`CHEAT-SHEET-S1-S4.md`](CHEAT-SHEET-S1-S4.md) para repasar conceptos, outcomes, archivos, frases de arranque, errores comunes y criterios de avance antes de cerrar el loop en S5.
 
 ## Elige tu actividad
 
@@ -14,10 +14,11 @@ Este repositorio acompaña cuatro sesiones conectadas. En S1 documentas tu proce
 | **Sesión 2 · Diseñar el agente correcto** | Sigue los seis pasos de esta página. | `Inicia mi ruta AI Agent Opt.` |
 | **Sesión 3 · Cortar el proceso paso por paso** | **[Descarga `s3-rutas-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/s3-rutas/dist/s3-rutas-kit.zip)**, instala `s3-rutas-coach.zip` y sigue [`s3-rutas/INSTALAR-S3-RUTAS.md`](s3-rutas/INSTALAR-S3-RUTAS.md). | `Inicia mi S3 Rutas.` |
 | **Sesión 4 · Encadenar y encender** | **[Descarga `s4-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s4-kit.zip)**, descomprímelo, copia `s4-kit/` dentro de tu Project existente, abre [`s4-kit/EMPIEZA-S4-AQUI.md`](s4-kit/EMPIEZA-S4-AQUI.md) y sigue [`s4-kit/INSTALAR-COACH-S4.md`](s4-kit/INSTALAR-COACH-S4.md). | `Inicia mi S4.` |
+| **Sesión 5 · Cerrar el loop** | Abre [`s5-kit/README.md`](s5-kit/README.md), elige la ruta **con sistema** o **sin sistema** e instala [`revision-de-sistema.zip`](s5-kit/01-SKILL/revision-de-sistema.zip) siguiendo [`s5-kit/01-SKILL/INSTALACION.md`](s5-kit/01-SKILL/INSTALACION.md). | `supervisa mi sistema` y después `audita mi proceso` |
 
-> **Antes de iniciar en Cowork:** no cambies las reglas del Project. Instala el único Skill de la sesión, `s3-rutas/02-RUTAS/dist/s3-rutas-coach.zip`; este guía las fases y guarda el seguimiento en `s3-rutas/03-SALIDAS/PROGRESO-S3.md`, sin tocar S2.
+> **Antes de iniciar S3 en Cowork:** no cambies las reglas del Project. Instala el único Skill de esa sesión, `s3-rutas/02-RUTAS/dist/s3-rutas-coach.zip`; este guía las fases y guarda el seguimiento en `s3-rutas/03-SALIDAS/PROGRESO-S3.md`, sin tocar S2.
 
-> **No abras un Project nuevo para S3 o S4.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados. Para S4, el ZIP exterior `dist/s4-kit.zip` entrega toda la actividad; después, dentro de esa carpeta, `s4-kit/dist/s4-encadenar-coach.zip` es el único archivo que instalas como Skill. El coach te ayudará a crear un Skill distinto para tu proceso.
+> **No abras un Project nuevo para S3, S4 o S5.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados. Para S4, el ZIP exterior `dist/s4-kit.zip` entrega toda la actividad; después, dentro de esa carpeta, `s4-kit/dist/s4-encadenar-coach.zip` es el único archivo que instalas como Skill. El coach te ayudará a crear un Skill distinto para tu proceso. En S5, el revisor necesita ver las evidencias anteriores y escribe únicamente en la carpeta de reportes que tú declares.
 
 ### Material adicional · no usar durante esta S3
 
@@ -92,7 +93,7 @@ La primera corrida termina en un **borrador revisable**. No envía, publica, com
 
 ## Para el facilitador
 
-Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) para el outcome de S1, [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para S2, [`s3-rutas/GUIA-FACILITADOR-RUTAS.md`](s3-rutas/GUIA-FACILITADOR-RUTAS.md) para S3 y [`s4-kit/GUIA-FACILITADOR-S4.md`](s4-kit/GUIA-FACILITADOR-S4.md) para S4. El laboratorio anterior [`s3-kit/`](s3-kit/EMPIEZA-S3-AQUI.md) se conserva como práctica posterior de confiabilidad.
+Abre [`S1-EMPIEZA-AQUI.md`](S1-EMPIEZA-AQUI.md) para el outcome de S1, [`GUIA-FACILITADOR.md`](GUIA-FACILITADOR.md) para S2, [`s3-rutas/GUIA-FACILITADOR-RUTAS.md`](s3-rutas/GUIA-FACILITADOR-RUTAS.md) para S3, [`s4-kit/GUIA-FACILITADOR-S4.md`](s4-kit/GUIA-FACILITADOR-S4.md) para S4 y [`s5-kit/README.md`](s5-kit/README.md) para conducir el cierre con sus dos rutas. El laboratorio anterior [`s3-kit/`](s3-kit/EMPIEZA-S3-AQUI.md) se conserva como práctica posterior de confiabilidad.
 
 ## Referencias
 
