@@ -1,21 +1,34 @@
-# Los nueve campos
+# Configuración de revisión · referencia
 
-Copia este bloque, llénalo y pégalo en la sección CONFIGURACIÓN de tu `SKILL.md`. Reemplaza el texto entre corchetes, corchetes incluidos.
+No tienes que llenar esto antes de instalar el coach. Durante la conversación, el coach localizará lo que pueda, te preguntará solo lo que falte, propondrá un borrador y lo guardará después de tu confirmación en `s5-kit/07-SALIDAS/config-revision.md`.
 
-PROCESO: [nombre de tu proceso]
-CARPETA DE ENTRADA: [ruta donde llegan los archivos que el sistema consume]
-CARPETA DE SALIDA: [ruta donde tu sistema escribe su output]
-CARPETA DE REPORTES: [ruta donde este Skill escribe sus reportes]
-CADENCIA ESPERADA: [día y hora de tu tarea programada]
-FRONTERA DECLARADA: [dónde se detiene tu sistema y de qué tipo es]
-CRITERIO 1: [qué tiene que ser cierto del output para que sirva]
-CRITERIO 2: [segundo criterio]
-CRITERIO 3: [tercer criterio, opcional]
+| Campo | Qué significa | De dónde puede salir |
+|---|---|---|
+| PROCESO | Nombre entendible del trabajo | Gate de S4 o tu explicación |
+| ENTRADA | Carpeta o archivos que consume | Project y output de S3/S4 |
+| SALIDA | Carpeta donde quedó el resultado | Última corrida visible |
+| REPORTES | Lugar separado para la revisión | Siempre `s5-kit/07-SALIDAS/` |
+| CADENCIA | Cuándo debía correr y qué retraso es aceptable | Panel Scheduled o tu confirmación |
+| FRONTERA | Dónde debe detenerse | `frontera.md` o gate de S4 |
+| CRITERIO 1 | Condición verificable de calidad | Output esperado |
+| CRITERIO 2 | Condición verificable de completitud o seguridad | Fuentes y frontera |
+| CRITERIO 3 | Condición adicional | Opcional |
 
-## Tres cosas que se equivocan siempre
+## Cómo se verá el archivo
 
-**Las rutas.** Escribe la ruta completa, no el nombre de la carpeta. Si no la tienes a la mano, ábrela en tu explorador de archivos y cópiala de la barra de dirección.
+```text
+PROCESO: ...
+ENTRADA: ...
+SALIDA: ...
+REPORTES: s5-kit/07-SALIDAS/
+CADENCIA: ...
+FRONTERA: ...
+CRITERIO 1: ...
+CRITERIO 2: ...
+CRITERIO 3: ... o NO APLICA
+CRITERIO CRÍTICO: ... o NINGUNO
+```
 
-**La carpeta de reportes.** Que no sea la misma que la de entrada ni la de salida. Si el revisor escribe donde escribe o lee tu sistema, la próxima corrida puede intentar procesar sus propios reportes.
+## Regla
 
-**Los criterios.** Ve el archivo [`CRITERIOS-buenos-y-malos.md`](CRITERIOS-buenos-y-malos.md) de esta carpeta antes de escribirlos.
+El coach puede proponer nombres y criterios a partir de evidencia, pero tú debes confirmarlos. No debe inventar una ruta, una cadencia ni una frontera.

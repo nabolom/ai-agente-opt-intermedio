@@ -25,6 +25,7 @@ REQUIRED = [
     'dist/ai-agent-opt-coach.zip',
     'dist/s3-kit.zip',
     'dist/s4-kit.zip',
+    'dist/s5-kit.zip',
     's3-kit/EMPIEZA-S3-AQUI.md',
     's3-kit/PRECHECK-S3.md',
     's3-kit/INICIAR-S3-SIN-SKILL.md',
@@ -68,6 +69,33 @@ REQUIRED = [
     's4-kit/skills/s4-encadenar-coach/SKILL.md',
     's4-kit/skills/s4-encadenar-coach/examples/trigger-tests.md',
     's4-kit/dist/s4-encadenar-coach.zip',
+    's5-kit/README.md',
+    's5-kit/EMPIEZA-S5-AQUI.md',
+    's5-kit/INSTALAR-COACH-S5.md',
+    's5-kit/INICIAR-S5-SIN-SKILL.md',
+    's5-kit/GUIA-FACILITADOR-S5.md',
+    's5-kit/02-CONFIGURACION/PLANTILLA-config.md',
+    's5-kit/02-CONFIGURACION/CRITERIOS-buenos-y-malos.md',
+    's5-kit/03-EJEMPLOS/EJEMPLO-supervision-verde.md',
+    's5-kit/03-EJEMPLOS/EJEMPLO-supervision-rojo.md',
+    's5-kit/03-EJEMPLOS/EJEMPLO-auditoria.md',
+    's5-kit/04-SIN-SISTEMA/README.md',
+    's5-kit/04-SIN-SISTEMA/CONFIG-demo.md',
+    's5-kit/04-SIN-SISTEMA/entrada-demo/datos-embarques.md',
+    's5-kit/04-SIN-SISTEMA/salida-demo/consolidado-2026-09-14.md',
+    's5-kit/04-SIN-SISTEMA/tabla-de-pasos-demo.md',
+    's5-kit/04-SIN-SISTEMA/recorte-v1-v2-demo.md',
+    's5-kit/04-SIN-SISTEMA/frontera-demo.md',
+    's5-kit/04-SIN-SISTEMA/gate-s5-demo.md',
+    's5-kit/04-SIN-SISTEMA/registro-ejecucion-demo.md',
+    's5-kit/05-HILL-CLIMBING/metrica-y-memoria.md',
+    's5-kit/05-HILL-CLIMBING/PLANTILLA-bitacora.md',
+    's5-kit/06-CIERRE/RONDA-DE-ESTADO.md',
+    's5-kit/06-CIERRE/SHOWROOM-formato.md',
+    's5-kit/07-SALIDAS/README.md',
+    's5-kit/07-SALIDAS/PROGRESO-S5.md',
+    's5-kit/skills/s5-cerrar-loop-coach/SKILL.md',
+    's5-kit/dist/s5-cerrar-loop-coach.zip',
 ]
 
 
@@ -142,6 +170,10 @@ for phrase in (
     's4-kit/EMPIEZA-S4-AQUI.md',
     's4-encadenar-coach.zip',
     'Inicia mi S4.',
+    'Sesión 5 · Cerrar el loop',
+    'dist/s5-kit.zip',
+    's5-cerrar-loop-coach.zip',
+    'Inicia mi S5.',
     'No abras un Project nuevo',
 ):
     if phrase not in readme:
@@ -237,7 +269,82 @@ for phrase in ('/schedule', 'Dispara la tarea manualmente una vez', 'archivos o 
     if phrase not in s4_schedule:
         fail(f'la programación S4 no cubre: {phrase}')
 
+s5_root = ROOT / 's5-kit'
+s5_files = [path for path in s5_root.rglob('*') if path.is_file()]
+if len(s5_files) != 27:
+    fail(f's5-kit debe tener 27 archivos y tiene {len(s5_files)}')
+
+for removed in (
+    '01-SKILL/INSTALACION.md',
+    '01-SKILL/SKILL.md',
+    '01-SKILL/revision-de-sistema.zip',
+):
+    if (s5_root / removed).exists():
+        fail(f'S5 conserva la instalación compleja anterior: {removed}')
+
+with zipfile.ZipFile(ROOT / 'dist/s5-kit.zip') as archive:
+    packaged = set(archive.namelist())
+    expected = {f's5-kit/{path.relative_to(s5_root).as_posix()}' for path in s5_files}
+    missing = sorted(expected - packaged)
+    if missing:
+        fail(f'el s5-kit.zip no contiene: {", ".join(missing)}')
+    if not all(name == 's5-kit/' or name.startswith('s5-kit/') for name in packaged):
+        fail('el s5-kit.zip no conserva una única carpeta raíz s5-kit/')
+
+for path in s5_files:
+    if path.suffix.lower() == '.zip':
+        continue
+    text = path.read_text(encoding='utf-8')
+    forbidden = re.search(r'\b(git|curl|terminal|n8n)\b|claude code', text, re.IGNORECASE)
+    if forbidden:
+        fail(f's5-kit menciona una herramienta prohibida en {path.relative_to(ROOT)}: {forbidden.group(0)}')
+
+s5_coach = (s5_root / 'skills/s5-cerrar-loop-coach/SKILL.md').read_text(encoding='utf-8')
+if not re.search(r'^name:\s*s5-cerrar-loop-coach$', s5_coach, re.MULTILINE):
+    fail('el name del coach S5 es incorrecto')
+for phrase in (
+    'Explicar → preguntar → proponer → confirmar → guardar',
+    '**Verde**',
+    '**Recuperación**',
+    '**Demo**',
+    'No exigir que copie rutas completas',
+    'NUNCA pedir que la persona edite, comprima o reinstale el Skill',
+    'NUNCA escribir fuera de `s5-kit/07-SALIDAS/`',
+    'Si faltan dos evidencias recuperables',
+    'fallan dos o más criterios',
+    'usando la **fecha de revisión**',
+):
+    if phrase not in s5_coach:
+        fail(f'el coach S5 no cubre: {phrase}')
+
+with zipfile.ZipFile(s5_root / 'dist/s5-cerrar-loop-coach.zip') as archive:
+    names = set(archive.namelist())
+    if names != {'s5-cerrar-loop-coach/SKILL.md'}:
+        fail('el ZIP del coach S5 no conserva la carpeta raíz correcta')
+    if archive.read('s5-cerrar-loop-coach/SKILL.md').decode('utf-8') != s5_coach:
+        fail('el ZIP del coach S5 no coincide con su fuente')
+
+for relative in ('README.md', 'EMPIEZA-S5-AQUI.md', 'INSTALAR-COACH-S5.md'):
+    text = (s5_root / relative).read_text(encoding='utf-8')
+    for phrase in ('s5-kit.zip', 's5-cerrar-loop-coach.zip', 'Inicia mi S5.'):
+        if phrase not in text:
+            fail(f'S5 no hace visible {phrase} en {relative}')
+
+s5_demo_config = (s5_root / '04-SIN-SISTEMA/CONFIG-demo.md').read_text(encoding='utf-8')
+if re.search(r'\[ruta[^\]]*\]', s5_demo_config, re.IGNORECASE):
+    fail('la demo S5 todavía exige que el participante configure rutas')
+
+s5_demo_source = (s5_root / '04-SIN-SISTEMA/entrada-demo/datos-embarques.md').read_text(encoding='utf-8')
+s5_demo_output = (s5_root / '04-SIN-SISTEMA/salida-demo/consolidado-2026-09-14.md').read_text(encoding='utf-8')
+for value in ('Nova Retail', 'Puebla–Veracruz', '$125,000'):
+    if value not in s5_demo_source or value in s5_demo_output:
+        fail(f'la demo S5 perdió la inconsistencia intencional: {value}')
+
+s5_progress = (s5_root / '07-SALIDAS/PROGRESO-S5.md').read_text(encoding='utf-8')
+if '4 · Auditoría | opcional' not in s5_progress or 'fase 4 puede quedar marcada como `omitida`' not in s5_progress:
+    fail('la auditoría S5 no está marcada como opcional')
+
 if (ROOT / '.claude').exists() or (ROOT / 'CLAUDE.md').exists():
     fail('el repo intermedio no debe contener runtime de Claude Code')
 
-print('OK — continuidad S1→S4, PDF, links, Skills, rutas, frontera, trigger, gate y seguridad validados.')
+print('OK — continuidad S1→S5, PDF, links, Skills, rutas, frontera, trigger, supervisión y seguridad validados.')

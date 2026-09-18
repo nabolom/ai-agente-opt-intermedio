@@ -2,34 +2,48 @@
 
 Sesión 5 · Claude para Productividad · Nivel 2 · Collective Academy
 
-En S4 tu proceso quedó corriendo solo. Lo que le falta es el loop que nadie construye hasta que algo sale mal: la verificación. Este kit instala un revisor que le dice a tu sistema si corrió, si lo que produjo sirve y qué le falta para la siguiente versión.
+En S4 tu proceso quedó corriendo. En S5 no vas a construir otra automatización: vas a comprobar si la que ya tienes **corrió, produjo algo útil y respetó su frontera**. Si todavía no tienes un sistema funcionando, harás exactamente el mismo recorrido con un caso demo.
 
-## Qué hay aquí
+## Empieza aquí
 
-| Carpeta | Para qué |
-|---|---|
-| [`01-SKILL/`](01-SKILL/) | El Skill de dos modos y cómo instalarlo |
-| [`02-CONFIGURACION/`](02-CONFIGURACION/) | Los nueve campos que tienes que llenar y cómo escribir un criterio que sirva |
-| [`03-EJEMPLOS/`](03-EJEMPLOS/) | Cómo se ve un reporte verde, uno rojo y una auditoría |
-| [`04-SIN-SISTEMA/`](04-SIN-SISTEMA/) | Si llegaste sin nada corriendo, empieza aquí |
-| [`05-HILL-CLIMBING/`](05-HILL-CLIMBING/) | Para después de la sesión: medir y mejorar |
-| [`06-CIERRE/`](06-CIERRE/) | Formatos de la ronda final y del Showroom |
+1. **[Descarga `s5-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s5-kit.zip)**.
+2. Descomprímelo y copia la carpeta `s5-kit/` en la raíz del mismo Project que usaste en S2, S3 y S4.
+3. Sigue [`INSTALAR-COACH-S5.md`](INSTALAR-COACH-S5.md). Instalarás `s5-kit/dist/s5-cerrar-loop-coach.zip`, un coach listo; **no tienes que editar ni volver a comprimir ningún Skill**.
+4. Abre una tarea nueva en ese Project y escribe:
 
-## Elige tu ruta
+> **Inicia mi S5.**
 
-| Si llegas con… | Empieza aquí | Outcome |
+El coach revisará lo que realmente existe y te asignará una ruta:
+
+| Ruta | Si llegas con… | Qué harás |
 |---|---|---|
-| **Un sistema corriendo** | Instala el Skill, completa tus nueve campos y usa `supervisa mi sistema`. | Un reporte de supervisión y un siguiente paso priorizado |
-| **Nada corriendo todavía** | Abre [`04-SIN-SISTEMA/README.md`](04-SIN-SISTEMA/README.md) y trabaja con el caso demo. | Dos reportes reales sin inventar un proceso propio |
+| **Verde** | Gate S5, frontera y un output real de tu automatización | Supervisarás tu propia corrida |
+| **Recuperación** | Parte de S4, pero falta una evidencia | Recuperarás solo el faltante y continuarás |
+| **Demo** | Nada utilizable o ningún output real | Usarás el caso de embarques ya preparado |
 
-## Orden de la sesión
+## Outcome mínimo de hoy
 
-1. Instala el Skill con [`01-SKILL/INSTALACION.md`](01-SKILL/INSTALACION.md).
-2. Llena los nueve campos con [`02-CONFIGURACION/PLANTILLA-config.md`](02-CONFIGURACION/PLANTILLA-config.md).
-3. Corre `supervisa mi sistema`.
-4. Corre `audita mi proceso`.
-5. Quédate con una sola línea: el siguiente paso.
+Sales con tres cosas en [`07-SALIDAS/`](07-SALIDAS/):
 
-## Antes de empezar
+1. Una configuración de revisión confirmada.
+2. Un reporte de supervisión con semáforo y evidencia.
+3. Un siguiente paso concreto con fecha.
 
-El Skill no envía, no publica, no borra y no modifica nada fuera de tu carpeta de reportes. Diagnostica y propone. Quien decide eres tú.
+La auditoría completa es el **segundo nivel**: hazla si terminas el mínimo o déjala como extensión. [`05-HILL-CLIMBING/`](05-HILL-CLIMBING/) también es trabajo posterior, no requisito para completar la sesión.
+
+## Mapa del kit
+
+| Carpeta o archivo | Para qué sirve |
+|---|---|
+| [`EMPIEZA-S5-AQUI.md`](EMPIEZA-S5-AQUI.md) | Vista rápida de la experiencia |
+| [`INSTALAR-COACH-S5.md`](INSTALAR-COACH-S5.md) | Instalación sin editar archivos |
+| [`02-CONFIGURACION/`](02-CONFIGURACION/) | Referencias que usa el coach para ayudarte a definir criterios |
+| [`03-EJEMPLOS/`](03-EJEMPLOS/) | Ejemplos de supervisión y auditoría |
+| [`04-SIN-SISTEMA/`](04-SIN-SISTEMA/) | Caso completo para la ruta demo |
+| [`05-HILL-CLIMBING/`](05-HILL-CLIMBING/) | Mejora semanal después de la sesión |
+| [`06-CIERRE/`](06-CIERRE/) | Ronda final y Showroom |
+| [`07-SALIDAS/`](07-SALIDAS/) | Único lugar donde el coach guarda resultados |
+
+## Regla de seguridad
+
+El coach diagnostica y propone. **No envía, publica, borra, compra ni modifica sistemas externos.** Todo queda como archivo revisable y tú decides qué hacer después.
