@@ -4,7 +4,7 @@
 
 Este repositorio acompaña cinco sesiones conectadas. En S1 documentas tu proceso y generas el PDF de entrada; en S2 Cowork cuestiona ese PDF y diseña el agente correcto; en S3 cortas y construyes el workflow; en S4 lo encadenas, marcas su frontera y lo enciendes; en S5 verificas si corrió, auditas el sistema y eliges su siguiente mejora. No necesitas Terminal ni Claude Code.
 
-> **Recap de fundamentos S1–S4:** consulta la [`CHEAT-SHEET-S1-S4.md`](CHEAT-SHEET-S1-S4.md) para repasar conceptos, outcomes, archivos, frases de arranque, errores comunes y criterios de avance antes de cerrar el loop en S5.
+> **Recap completo S1–S5:** consulta la [`CHEAT-SHEET-S1-S5.md`](CHEAT-SHEET-S1-S5.md) para repasar conceptos, outcomes, archivos, frases de arranque, errores comunes, supervisión y hill climbing.
 
 ## Elige tu actividad
 

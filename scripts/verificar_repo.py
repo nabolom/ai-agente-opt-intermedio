@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     'README.md',
     'S1-EMPIEZA-AQUI.md',
-    'CHEAT-SHEET-S1-S4.md',
+    'CHEAT-SHEET-S1-S5.md',
     'RUTA-EN-VIVO.md',
     'INSTRUCCIONES-PROJECT.md',
     'INICIAR-SIN-SKILL.md',
@@ -162,7 +162,7 @@ for path in ROOT.rglob('*.md'):
 readme = (ROOT / 'README.md').read_text(encoding='utf-8')
 for phrase in (
     '## Elige tu actividad',
-    'CHEAT-SHEET-S1-S4.md',
+    'CHEAT-SHEET-S1-S5.md',
     'Sesión 1 · Mapear el proceso',
     '## Outcome observable de S1',
     'my-automation.bolt.host',
@@ -184,6 +184,20 @@ for phrase in (
 ):
     if phrase not in readme:
         fail(f'el README no hace visible: {phrase}')
+
+cheat = (ROOT / 'CHEAT-SHEET-S1-S5.md').read_text(encoding='utf-8')
+for phrase in (
+    'S5 **supervisa**',
+    'Inicia mi S5.',
+    's5-kit/07-SALIDAS/config-revision.md',
+    's5-kit/07-SALIDAS/supervision-AAAA-MM-DD.md',
+    's5-kit/07-SALIDAS/cierre-s5.md',
+    'La evidencia se ordena así',
+    'Hill climbing: mejorar sin perder control',
+    'una métrica, una memoria y un cambio por iteración',
+):
+    if phrase not in cheat:
+        fail(f'la cheat sheet S1–S5 no cubre: {phrase}')
 
 input_guide = (ROOT / '00-INPUT/README.md').read_text(encoding='utf-8')
 if 'mi-automatizacion.pdf' not in input_guide or 'S1-EMPIEZA-AQUI.md' not in input_guide:
