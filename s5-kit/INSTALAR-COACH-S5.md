@@ -44,10 +44,11 @@ Si no conservas el Project anterior, crea una carpeta `mi-s5-demo`, coloca `s5-k
 
 La primera respuesta debe:
 
-1. decirte que hará un precheck;
-2. buscar evidencias de S4 y un output;
-3. asignarte ruta verde, recuperación o demo;
-4. hacerte máximo cuatro preguntas, no pedirte que edites el Skill.
+1. decirte que hará un mapa de lo que existe en S1–S4;
+2. trabajar en solo lectura y buscar evidencias sin completar huecos;
+3. preparar un Mermaid y una exposición de 60 segundos;
+4. proponerte ruta verde, recuperación o demo;
+5. hacerte máximo cuatro preguntas, no pedirte que edites el Skill.
 
 ## Si no puedes instalar Skills
 

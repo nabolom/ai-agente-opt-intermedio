@@ -2,11 +2,11 @@
 
 Sesión 5 · Claude para Productividad · Nivel 2 · Collective Academy
 
-En S4 tu proceso quedó corriendo. En S5 no vas a construir otra automatización: vas a comprobar si la que ya tienes **corrió, produjo algo útil y respetó su frontera**. Si todavía no tienes un sistema funcionando, harás exactamente el mismo recorrido con un caso demo.
+En S4 tu proceso quedó corriendo. En S5 no vas a construir otra automatización: primero harás visible lo que realmente conservas de S1–S4 y después comprobarás si tu automatización **corrió, produjo algo útil y respetó su frontera**. Si todavía no tienes un sistema funcionando, harás exactamente el mismo recorrido con un caso demo.
 
 ## La promesa de S5
 
-**En 45 minutos con instalación previa —o 60 minutos instalando en clase— pasarás de “creo que funciona” a una decisión respaldada por evidencia.**
+**En 45 minutos con mapa e instalación como prework —o 60 minutos si haces el mapa en clase— pasarás de “creo que funciona” a una decisión respaldada por evidencia. Si además instalas todo en clase, reserva 75 minutos.**
 
 | Archivo tangible | Qué demuestra | Para qué te sirve después |
 |---|---|---|
@@ -15,6 +15,8 @@ En S4 tu proceso quedó corriendo. En S5 no vas a construir otra automatización
 | `cierre-s5.md` | Qué harás, quién responde y cuándo | Convierte el diagnóstico en una acción ejecutable |
 
 > **S5 está terminada cuando puedes defender esta frase con archivos:** “Mi semáforo es ___ porque encontré ___ en ___; antes del ___ voy a ___.”
+
+Antes de los tres entregables finales, el coach crea contigo `mapa-inicial-s1-s5.md`: un inventario con Mermaid, máximo tres huecos y una exposición de 60 segundos. Este mapa es la evidencia de entrada y determina tu ruta; no sustituye la supervisión.
 
 Consulta [`OUTCOMES-Y-TIEMPOS.md`](OUTCOMES-Y-TIEMPOS.md) para ver el contenido de cada entregable, los criterios de terminado y el valor operativo de la sesión.
 
@@ -27,7 +29,7 @@ Consulta [`OUTCOMES-Y-TIEMPOS.md`](OUTCOMES-Y-TIEMPOS.md) para ver el contenido 
 
 > **Inicia mi S5.**
 
-El coach revisará lo que realmente existe y te asignará una ruta:
+El coach mapeará lo que realmente existe, preparará tu exposición de 60 segundos y te asignará una ruta:
 
 | Ruta | Si llegas con… | Qué harás |
 |---|---|---|
@@ -37,7 +39,7 @@ El coach revisará lo que realmente existe y te asignará una ruta:
 
 ## Outcome mínimo de hoy
 
-Sales con tres cosas en [`07-SALIDAS/`](07-SALIDAS/):
+Al inicio obtienes `mapa-inicial-s1-s5.md`. Después sales con tres entregables de cierre en [`07-SALIDAS/`](07-SALIDAS/):
 
 1. Una configuración de revisión confirmada.
 2. Un reporte de supervisión con semáforo y evidencia.
@@ -50,6 +52,7 @@ La auditoría completa es el **segundo nivel**: hazla si terminas el mínimo o d
 | Carpeta o archivo | Para qué sirve |
 |---|---|
 | [`EMPIEZA-S5-AQUI.md`](EMPIEZA-S5-AQUI.md) | Vista rápida de la experiencia |
+| [`MAPA-INICIAL-Y-EXPOSICION.md`](MAPA-INICIAL-Y-EXPOSICION.md) | Prompt, estados, Mermaid y formato de exposición |
 | [`OUTCOMES-Y-TIEMPOS.md`](OUTCOMES-Y-TIEMPOS.md) | Tiempo, entregables, definición de terminado y valor |
 | [`INSTALAR-COACH-S5.md`](INSTALAR-COACH-S5.md) | Instalación sin editar archivos |
 | [`02-CONFIGURACION/`](02-CONFIGURACION/) | Referencias que usa el coach para ayudarte a definir criterios |

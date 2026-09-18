@@ -18,15 +18,16 @@ Este repositorio acompaña cinco sesiones conectadas. En S1 documentas tu proces
 
 ### S5 · Tiempo, entregables y valor
 
-**Tiempo:** 45 minutos con instalación previa o 60 minutos instalando en clase. La auditoría completa agrega 15 minutos y es opcional.
+**Tiempo:** 45 minutos si instalación y mapa son prework; 60 minutos si el kit ya está instalado y el mapa se hace en clase; o 75 minutos para instalar, mapear y supervisar en clase. La exposición ocurre en parejas. Para escuchar a seis personas en plenaria agrega 8 minutos; la auditoría completa agrega 15 minutos y es opcional.
 
 | Archivo que obtienes | Qué te permite decidir |
 |---|---|
+| `mapa-inicial-s1-s5.md` | Qué evidencia existe, qué falta y por qué ruta entrarás a S5 |
 | `config-revision.md` | Qué significa que una corrida realmente sirva |
 | `supervision-AAAA-MM-DD.md` | Si corrió, si cumplió y si respetó la frontera |
 | `cierre-s5.md` | Qué acción sigue, quién responde y en qué fecha |
 
-> **Outcome:** pasas de “creo que mi automatización funciona” a tener un semáforo defendible con evidencia y una siguiente acción fechada. Consulta [`s5-kit/OUTCOMES-Y-TIEMPOS.md`](s5-kit/OUTCOMES-Y-TIEMPOS.md) para ver la definición completa de terminado.
+> **Outcome:** primero expones tu avance S1–S4 con un Mermaid, una evidencia, un hueco y una ruta. Después pasas de “creo que mi automatización funciona” a tener un semáforo defendible y una siguiente acción fechada. Consulta [`s5-kit/MAPA-INICIAL-Y-EXPOSICION.md`](s5-kit/MAPA-INICIAL-Y-EXPOSICION.md) y [`s5-kit/OUTCOMES-Y-TIEMPOS.md`](s5-kit/OUTCOMES-Y-TIEMPOS.md).
 
 > **Antes de iniciar S3 en Cowork:** no cambies las reglas del Project. Instala el único Skill de esa sesión, `s3-rutas/02-RUTAS/dist/s3-rutas-coach.zip`; este guía las fases y guarda el seguimiento en `s3-rutas/03-SALIDAS/PROGRESO-S3.md`, sin tocar S2.
 

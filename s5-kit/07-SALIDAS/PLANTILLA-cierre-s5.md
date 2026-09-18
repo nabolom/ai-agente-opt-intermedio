@@ -2,6 +2,7 @@
 
 Fecha: [AAAA-MM-DD]
 Proceso revisado: [propio / demo]
+Tipo de evidencia: [proceso propio / simulación didáctica]
 
 ## Mi resultado
 

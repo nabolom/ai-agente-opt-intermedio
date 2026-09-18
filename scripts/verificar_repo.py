@@ -72,6 +72,7 @@ REQUIRED = [
     's5-kit/README.md',
     's5-kit/OUTCOMES-Y-TIEMPOS.md',
     's5-kit/EMPIEZA-S5-AQUI.md',
+    's5-kit/MAPA-INICIAL-Y-EXPOSICION.md',
     's5-kit/INSTALAR-COACH-S5.md',
     's5-kit/INICIAR-S5-SIN-SKILL.md',
     's5-kit/GUIA-FACILITADOR-S5.md',
@@ -95,6 +96,7 @@ REQUIRED = [
     's5-kit/06-CIERRE/SHOWROOM-formato.md',
     's5-kit/07-SALIDAS/README.md',
     's5-kit/07-SALIDAS/PROGRESO-S5.md',
+    's5-kit/07-SALIDAS/PLANTILLA-mapa-inicial.md',
     's5-kit/07-SALIDAS/PLANTILLA-config-revision.md',
     's5-kit/07-SALIDAS/PLANTILLA-supervision.md',
     's5-kit/07-SALIDAS/PLANTILLA-cierre-s5.md',
@@ -180,6 +182,9 @@ for phrase in (
     'Inicia mi S5.',
     '### S5 · Tiempo, entregables y valor',
     's5-kit/OUTCOMES-Y-TIEMPOS.md',
+    's5-kit/MAPA-INICIAL-Y-EXPOSICION.md',
+    'mapa-inicial-s1-s5.md',
+    '75 minutos',
     'No abras un Project nuevo',
 ):
     if phrase not in readme:
@@ -192,6 +197,10 @@ for phrase in (
     's5-kit/07-SALIDAS/config-revision.md',
     's5-kit/07-SALIDAS/supervision-AAAA-MM-DD.md',
     's5-kit/07-SALIDAS/cierre-s5.md',
+    'mapa-inicial-s1-s5.md',
+    'diagrama Mermaid',
+    'exposición de 60 segundos',
+    '**75 minutos**',
     'La evidencia se ordena así',
     'Hill climbing: mejorar sin perder control',
     'una métrica, una memoria y un cambio por iteración',
@@ -291,8 +300,8 @@ for phrase in ('/schedule', 'Dispara la tarea manualmente una vez', 'archivos o 
 
 s5_root = ROOT / 's5-kit'
 s5_files = [path for path in s5_root.rglob('*') if path.is_file()]
-if len(s5_files) != 31:
-    fail(f's5-kit debe tener 31 archivos y tiene {len(s5_files)}')
+if len(s5_files) != 33:
+    fail(f's5-kit debe tener 33 archivos y tiene {len(s5_files)}')
 
 for removed in (
     '01-SKILL/INSTALACION.md',
@@ -327,6 +336,13 @@ for phrase in (
     '**Verde**',
     '**Recuperación**',
     '**Demo**',
+    'Fase 0 · Mapa, exposición y ruta',
+    'mapa-inicial-s1-s5.md',
+    'flowchart LR',
+    'máximo 15 nodos',
+    'Mi proceso llegó hasta ___. Tengo evidencia de ___ en ___. Me falta ___. Por eso entraré a S5 por la ruta ___.',
+    'NUNCA incluir en el Mermaid nombres de clientes',
+    'no tratar plantillas, ejemplos, ZIPs ni archivos del curso como trabajo del participante',
     'No exigir que copie rutas completas',
     'NUNCA pedir que la persona edite, comprima o reinstale el Skill',
     'NUNCA escribir fuera de `s5-kit/07-SALIDAS/`',
@@ -341,12 +357,36 @@ for phrase in (
     if phrase not in s5_coach:
         fail(f'el coach S5 no cubre: {phrase}')
 
+s5_phase_zero = s5_coach.split('### Fase 0 · Mapa, exposición y ruta', 1)[1].split('### Fase 1 · Configuración guiada', 1)[0]
+for forbidden_state in ('POR CONFIRMAR', 'RECONSTRUIDO', 'CONFIRMADA POR LA PERSONA', 'CONFIRMADO POR LA PERSONA', 'NO DETERMINADO'):
+    if forbidden_state in s5_phase_zero:
+        fail(f'la fase 0 de S5 mezcla el estado {forbidden_state} fuera de su taxonomía')
+for phrase in ('máximo 12 minutos', 'Al minuto 12', 'CONFIRMADO POR MÍ', 'NO ENCONTRADO'):
+    if phrase not in s5_phase_zero:
+        fail(f'la fase 0 de S5 no cubre: {phrase}')
+
 with zipfile.ZipFile(s5_root / 'dist/s5-cerrar-loop-coach.zip') as archive:
     names = set(archive.namelist())
     if names != {'s5-cerrar-loop-coach/SKILL.md'}:
         fail('el ZIP del coach S5 no conserva la carpeta raíz correcta')
     if archive.read('s5-cerrar-loop-coach/SKILL.md').decode('utf-8') != s5_coach:
         fail('el ZIP del coach S5 no coincide con su fuente')
+
+s5_map = (s5_root / 'MAPA-INICIAL-Y-EXPOSICION.md').read_text(encoding='utf-8')
+s5_map_template = (s5_root / '07-SALIDAS/PLANTILLA-mapa-inicial.md').read_text(encoding='utf-8')
+s5_facilitator = (s5_root / 'GUIA-FACILITADOR-S5.md').read_text(encoding='utf-8')
+for phrase in ('solo lectura', 'flowchart LR', 'máximo 15 nodos', 'CONFIRMADO POR MÍ', 'mapa-inicial-s1-s5.md', 'exposición de 60 segundos'):
+    if phrase.lower() not in s5_map.lower():
+        fail(f'la guía del mapa S5 no cubre: {phrase}')
+for phrase in ('## Inventario', '## Diagrama', '## Huecos prioritarios', '## Ruta S5 propuesta', '## Mi exposición de 60 segundos'):
+    if phrase not in s5_map_template:
+        fail(f'la plantilla del mapa S5 no cubre: {phrase}')
+for relative in ('07-SALIDAS/PLANTILLA-supervision.md', '07-SALIDAS/PLANTILLA-cierre-s5.md'):
+    if 'Tipo de evidencia: [proceso propio / simulación didáctica]' not in (s5_root / relative).read_text(encoding='utf-8'):
+        fail(f'S5 no distingue proceso propio de simulación en {relative}')
+for phrase in ('instalación y mapa como prework', '3–15 | Mapa S1–S4 y ruta', '15–19 | Exposición en parejas', '75 minutos · instalación, mapa y recorrido en clase', 'agrega **8 minutos**'):
+    if phrase not in s5_facilitator:
+        fail(f'la guía de facilitación S5 no cubre: {phrase}')
 
 for relative in ('README.md', 'EMPIEZA-S5-AQUI.md', 'INSTALAR-COACH-S5.md'):
     text = (s5_root / relative).read_text(encoding='utf-8')

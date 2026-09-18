@@ -3,6 +3,7 @@
 Fecha de revisión: [AAAA-MM-DD]
 Fecha y hora de la corrida: [fecha y hora / NO DETERMINADA]
 Ruta: [verde / recuperación / demo]
+Tipo de evidencia: [proceso propio / simulación didáctica]
 
 ## Semáforo
 

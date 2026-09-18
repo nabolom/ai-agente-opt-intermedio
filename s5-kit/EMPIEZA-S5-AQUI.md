@@ -10,7 +10,7 @@
 2. Instala únicamente `s5-kit/dist/s5-cerrar-loop-coach.zip` siguiendo [`INSTALAR-COACH-S5.md`](INSTALAR-COACH-S5.md).
 3. Escribe `Inicia mi S5.`.
 
-No edites el ZIP del coach. La configuración se construye contigo durante la conversación y se guarda en `s5-kit/07-SALIDAS/config-revision.md`.
+No edites el ZIP del coach. El mapa, la ruta y la configuración se construyen contigo durante la conversación y se guardan únicamente en `s5-kit/07-SALIDAS/`.
 
 ### Si ya no tienes el Project anterior
 
@@ -21,26 +21,33 @@ No edites el ZIP del coach. La configuración se construye contigo durante la co
 
 ## Qué hará el coach
 
-1. Buscará tu gate de S4 y el output más reciente.
-2. Te asignará ruta verde, recuperación o demo.
-3. Convertirá tus expectativas en dos o tres criterios verificables.
-4. Revisará una corrida real o el caso demo.
-5. Guardará un reporte con semáforo, evidencia y máximo tres hallazgos.
-6. Te pedirá un siguiente paso con responsable y fecha.
+1. Inventariará lo que realmente existe de S1–S4, sin modificarlo ni completar huecos.
+2. Te mostrará un diagrama Mermaid y una exposición de 60 segundos.
+3. Guardará el mapa confirmado como `s5-kit/07-SALIDAS/mapa-inicial-s1-s5.md`.
+4. Te asignará ruta verde, recuperación o demo.
+5. Convertirá tus expectativas en dos o tres criterios verificables.
+6. Revisará una corrida real o el caso demo.
+7. Guardará un reporte con semáforo, evidencia y máximo tres hallazgos.
+8. Te pedirá un siguiente paso con responsable y fecha.
 
-Para facilitarla en vivo, elige la modalidad de **45 minutos con prework** o **60 minutos instalando en clase** en [`GUIA-FACILITADOR-S5.md`](GUIA-FACILITADOR-S5.md).
+Para facilitarla en vivo, elige la modalidad de **45 minutos con mapa e instalación como prework**, **60 minutos con mapa en clase** o **75 minutos instalando todo en clase** en [`GUIA-FACILITADOR-S5.md`](GUIA-FACILITADOR-S5.md).
 
-## Tus tres archivos al final
+## Tu mapa de entrada y tus tres archivos al final
 
 En `s5-kit/07-SALIDAS/` deben existir:
 
-1. `config-revision.md` con criterios que dos personas puedan evaluar igual.
-2. `supervision-AAAA-MM-DD.md` con semáforo, evidencia y máximo tres hallazgos.
-3. `cierre-s5.md` con siguiente paso, responsable y fecha.
+1. `mapa-inicial-s1-s5.md` con inventario, Mermaid, huecos y guion de exposición.
+2. `config-revision.md` con criterios que dos personas puedan evaluar igual.
+3. `supervision-AAAA-MM-DD.md` con semáforo, evidencia y máximo tres hallazgos.
+4. `cierre-s5.md` con siguiente paso, responsable y fecha.
 
 ## Cómo sabes que terminaste
 
-Además de tener los tres archivos, debes poder explicar sin leer todo el reporte:
+Además de tener el mapa de entrada y los tres archivos de cierre, debes poder explicar sin leer todo el reporte:
+
+> Mi proceso llegó hasta ___. Tengo evidencia de ___ en ___. Me falta ___. Por eso entraré a S5 por la ruta ___.
+
+y, al final:
 
 > Mi semáforo es ___ porque encontré ___ en ___; antes del ___ voy a ___.
 
@@ -50,7 +57,7 @@ Abre [`OUTCOMES-Y-TIEMPOS.md`](OUTCOMES-Y-TIEMPOS.md) para ver qué contiene cad
 
 | Bloque | Estado |
 |---|---|
-| Precheck y elección de ruta | Obligatorio |
+| Mapa inicial, exposición y elección de ruta | Obligatorio |
 | Configuración guiada | Obligatorio |
 | Una supervisión completa | Obligatorio |
 | Siguiente paso con fecha | Obligatorio |

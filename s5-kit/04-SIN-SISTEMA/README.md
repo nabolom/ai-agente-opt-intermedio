@@ -18,11 +18,13 @@ Cuando el coach te asigne **ruta demo**, usará:
 ## Qué hacer
 
 1. Escribe `Inicia mi S5.`.
-2. Confirma que aceptas trabajar con el caso demo.
-3. Lee y confirma la configuración y los criterios que proponga el coach.
-4. Revisa y confirma el borrador del reporte de supervisión.
-5. Explica con tus palabras por qué recibió ese semáforo.
-6. Elige hacer la auditoría opcional o continuar al cierre.
-7. Define una acción, un responsable y una fecha; confirma el cierre.
+2. Revisa el mapa que el coach hará con la evidencia didáctica y confirma que diga `simulación didáctica`.
+3. Expón el Mermaid en 60 segundos; aclara que no representa tu proceso personal.
+4. Confirma que aceptas trabajar con el caso demo.
+5. Lee y confirma la configuración y los criterios que proponga el coach.
+6. Revisa y confirma el borrador del reporte de supervisión.
+7. Explica con tus palabras por qué recibió ese semáforo.
+8. Elige hacer la auditoría opcional o continuar al cierre.
+9. Define una acción, un responsable y una fecha; confirma el cierre.
 
 El output tiene inconsistencias intencionales. No las busques antes: deja que el revisor las encuentre con evidencia.

@@ -17,7 +17,7 @@
 | **S2 · Diseñar** | ¿Esto necesita IF, IA, híbrido o todavía no debe automatizarse? | El PDF deja de ser una propuesta y se convierte en una hipótesis cuestionada. | Decisión tecnológica, MVP, harness, memoria, Skill o reglas y pruebas. | `Inicia mi ruta AI Agent Opt.` |
 | **S3 · Demostrar** | ¿Quién decide cada paso y qué tan bien funciona uno de ellos? | El proceso completo se abre paso por paso. | Tabla etiquetada, un paso construido, cinco pruebas y un número. | `Inicia mi S3 Rutas.` |
 | **S4 · Operar** | ¿Qué versión puede correr hoy, cómo arranca y dónde debe detenerse? | Los pasos probados se convierten en una cadena con trigger y frontera. | V1 encadenada, corrida manual, tarea programada y gate de S5. | `Inicia mi S4.` |
-| **S5 · Supervisar** | ¿Corrió, sirvió y respetó la frontera? | Una corrida deja de ser una impresión y se convierte en una decisión respaldada por evidencia. | Configuración de revisión, reporte con semáforo y siguiente acción con fecha. | `Inicia mi S5.` |
+| **S5 · Supervisar** | ¿Qué tengo, qué falta y puedo confiar en una corrida? | El avance y la corrida dejan de ser impresiones y se convierten en decisiones respaldadas por evidencia. | Mapa Mermaid, ruta S5, configuración, reporte con semáforo y siguiente acción con fecha. | `Inicia mi S5.` |
 
 La progresión evita un error frecuente: **intentar automatizar un proceso completo antes de entender sus decisiones, datos, límites y fallas**. Cada sesión reduce una incertidumbre diferente.[1]
 
@@ -381,11 +381,29 @@ S5 no construye otra automatización. Revisa la que ya existe —o una demo comp
 
 | Modalidad | Tiempo | Condición |
 |---|---:|---|
-| **Recomendada** | **45 minutos** | Kit incorporado y coach instalado antes de la sesión |
-| **Todo en clase** | **60 minutos** | Incluye descarga, copia e instalación |
+| **Recomendada** | **45 minutos** | Kit, coach y mapa inicial completados como prework |
+| **Mapa en clase** | **60 minutos** | Kit y coach instalados; incluye mapa, recuperación y exposición |
+| **Todo en clase** | **75 minutos** | Incluye descarga, copia, instalación, mapa, exposición y supervisión |
+| **Exposición de seis personas en plenaria** | **+8 minutos** | Sustituye la exposición simultánea en parejas |
 | **Con auditoría grupal** | **+15 minutos** | Revisa V1, V2 y bloqueos; es opcional |
 
 Hill climbing continúa después de la sesión. No es requisito para completar el recorrido mínimo.
+
+## El mapa que abre S5
+
+Antes de supervisar, el coach inventariará los artefactos pedagógicos relevantes de S1–S4 en modo solo lectura. Agrupa ZIPs, duplicados y archivos de instalación, protege información sensible y genera `s5-kit/07-SALIDAS/mapa-inicial-s1-s5.md` con:
+
+1. Un resumen de lo que existe y lo que no puede afirmarse.
+2. Una tabla de evidencias con estados `ENCONTRADO`, `INCOMPLETO`, `CONFIRMADO POR MÍ`, `NO ENCONTRADO` o `NO APLICA`.
+3. Un Mermaid `flowchart LR` de máximo 15 nodos.
+4. Máximo tres huecos y la ruta S5 propuesta.
+5. Este guion de exposición de 60 segundos:
+
+> **Mi proceso llegó hasta ___. Tengo evidencia de ___ en ___. Me falta ___. Por eso entraré a S5 por la ruta ___.**
+
+Prompt recomendado:
+
+> **Inicia mi S5. Primero mapea lo que realmente existe de S1 a S4, muéstrame el diagrama Mermaid, propón mi ruta y prepara mi exposición de 60 segundos.**
 
 ## Las tres rutas
 
@@ -397,7 +415,7 @@ Hill climbing continúa después de la sesión. No es requisito para completar e
 
 La ruta demo demuestra que sabes aplicar el método; **no significa que tu proceso personal haya sido validado**.
 
-## Los tres entregables obligatorios
+## Los tres entregables de cierre
 
 | Archivo | Qué contiene | Decisión que habilita |
 |---|---|---|
@@ -452,7 +470,7 @@ En Cowork, la mejora es **asistida**: el sistema mide y propone; la persona apru
 
 ## Criterio de terminado
 
-S5 está completa cuando existen los tres archivos obligatorios, el semáforo cita evidencia, cada hallazgo señala un archivo, la frontera está clasificada y el siguiente paso tiene responsable y fecha. Debes poder decir:
+S5 está completa cuando existe el mapa inicial, puedes exponer tu ruta en 60 segundos, existen los tres archivos de cierre, el semáforo cita evidencia, cada hallazgo señala un archivo, la frontera está clasificada y el siguiente paso tiene responsable y fecha. Debes poder decir:
 
 > **Mi semáforo es ___ porque encontré ___ en ___; antes del ___ voy a ___.**
 
@@ -499,7 +517,7 @@ La V1 encadena extracción, normalización, categorización y comparación. Se d
 
 ## S5 · La supervisión y mejora
 
-Antes de revisar, se confirma que el output debe incluir proveedor, monto, fecha, categoría, fuente y estado `BORRADOR`. La supervisión compara una corrida real contra esos criterios, confirma si apareció en la ventana esperada y verifica la frontera con la evidencia disponible. El reporte obtiene un semáforo conservador y propone una sola acción con responsable y fecha.
+Primero se crea un Mermaid que muestra qué evidencia existe del mapa, arquitectura, paso probado y operación; el participante expone un hueco y entra por una ruta. Después se confirma que el output debe incluir proveedor, monto, fecha, categoría, fuente y estado `BORRADOR`. La supervisión compara una corrida real contra esos criterios, confirma si apareció en la ventana esperada y verifica la frontera con la evidencia disponible. El reporte obtiene un semáforo conservador y propone una sola acción con responsable y fecha.
 
 Después de la sesión se elige una métrica, por ejemplo **porcentaje de facturas que pasan sin corrección humana**. Cada corrida añade un renglón a la bitácora. Se aplica un solo cambio por semana y se conserva o revierte según el movimiento de la métrica.
 
@@ -520,6 +538,7 @@ Después de la sesión se elige una métrica, por ejemplo **porcentaje de factur
 | El ERP o la hoja no se pueden modificar | Encontraste una frontera | **S4 · Frontera** |
 | Quieres programar, pero no has visto el output real | Falta corrida supervisada | **S4 · Fase 4** |
 | La tarea existe, pero no sabes demostrarla | Falta prueba manual y gate | **S4 · Gate S5** |
+| No sabes qué conservas de las sesiones anteriores | Falta inventario visual | **S5 · Mapa inicial** |
 | Existe un archivo, pero no sabes si sirve | Faltan criterios y supervisión | **S5 · Configuración y reporte** |
 | El semáforo depende de una opinión | Falta evidencia trazable | **S5 · Supervisión** |
 | No sabes si el sistema mejora con el tiempo | Falta métrica, memoria o comparación | **S5 · Hill climbing** |
@@ -565,6 +584,8 @@ Después de la sesión se elige una métrica, por ejemplo **porcentaje de factur
 
 ## S5
 
+- [ ] `s5-kit/07-SALIDAS/mapa-inicial-s1-s5.md`
+- [ ] Exposición de 60 segundos con avance, evidencia, hueco y ruta
 - [ ] `s5-kit/07-SALIDAS/config-revision.md`
 - [ ] `s5-kit/07-SALIDAS/supervision-AAAA-MM-DD.md`
 - [ ] `s5-kit/07-SALIDAS/cierre-s5.md`
@@ -586,6 +607,7 @@ Después de la sesión se elige una métrica, por ejemplo **porcentaje de factur
 | Empezar S4 | `Inicia mi S4.` |
 | Retomar S4 | `Continúa mi S4.` |
 | Empezar S5 | `Inicia mi S5.` |
+| Pedir mapa y exposición explícitos | `Inicia mi S5. Primero mapea lo que realmente existe de S1 a S4, muéstrame el diagrama Mermaid, propón mi ruta y prepara mi exposición de 60 segundos.` |
 | Retomar S5 | `Continúa mi S5.` |
 | Pedir explicación | `No entiendo esta fase. Explícala con el caso demo y vuelve a preguntarme con mi proceso.` |
 | Evitar que decida por ti | `No elijas por mí. Hazme las preguntas y registra solo lo que confirme.` |
@@ -596,7 +618,7 @@ Después de la sesión se elige una métrica, por ejemplo **porcentaje de factur
 
 # 12. Cómo explicar el curso en 60 segundos
 
-> En S1 hicimos visible un proceso y lo convertimos en un PDF. En S2 cuestionamos ese PDF: identificamos bloqueos, decidimos si requería IF, IA, una combinación o si todavía no debía automatizarse, y diseñamos harness, memoria y pruebas. En S3 abrimos el proceso paso por paso, construimos solo uno y lo probamos para obtener evidencia. En S4 recortamos una versión que sí podía correr, marcamos dónde debía detenerse, encadenamos los pasos y añadimos un trigger. En S5 revisamos una corrida contra criterios, generamos un semáforo defendible y comprometimos una siguiente acción. Después, hill climbing usa una métrica y una bitácora para mejorar una sola cosa por iteración. El resultado no es un agente que “hace todo”; es un proceso pequeño, observable y seguro que podemos explicar, probar, operar y mejorar.
+> En S1 hicimos visible un proceso y lo convertimos en un PDF. En S2 cuestionamos ese PDF: identificamos bloqueos, decidimos si requería IF, IA, una combinación o si todavía no debía automatizarse, y diseñamos harness, memoria y pruebas. En S3 abrimos el proceso paso por paso, construimos solo uno y lo probamos para obtener evidencia. En S4 recortamos una versión que sí podía correr, marcamos dónde debía detenerse, encadenamos los pasos y añadimos un trigger. En S5 primero mapeamos con Mermaid qué evidencia existe y qué falta; después revisamos una corrida contra criterios, generamos un semáforo defendible y comprometimos una siguiente acción. Finalmente, hill climbing usa una métrica y una bitácora para mejorar una sola cosa por iteración. El resultado no es un agente que “hace todo”; es un proceso pequeño, observable y seguro que podemos explicar, probar, operar y mejorar.
 
 ---
 
