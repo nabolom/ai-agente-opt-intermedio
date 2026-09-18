@@ -16,9 +16,21 @@ Este repositorio acompaña cinco sesiones conectadas. En S1 documentas tu proces
 | **Sesión 4 · Encadenar y encender** | **[Descarga `s4-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s4-kit.zip)**, descomprímelo, copia `s4-kit/` dentro de tu Project existente, abre [`s4-kit/EMPIEZA-S4-AQUI.md`](s4-kit/EMPIEZA-S4-AQUI.md) y sigue [`s4-kit/INSTALAR-COACH-S4.md`](s4-kit/INSTALAR-COACH-S4.md). | `Inicia mi S4.` |
 | **Sesión 5 · Cerrar el loop** | **[Descarga `s5-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s5-kit.zip)**, copia `s5-kit/` dentro del mismo Project e instala `s5-kit/dist/s5-cerrar-loop-coach.zip` siguiendo [`s5-kit/INSTALAR-COACH-S5.md`](s5-kit/INSTALAR-COACH-S5.md). | `Inicia mi S5.` |
 
+### S5 · Tiempo, entregables y valor
+
+**Tiempo:** 45 minutos con instalación previa o 60 minutos instalando en clase. La auditoría completa agrega 15 minutos y es opcional.
+
+| Archivo que obtienes | Qué te permite decidir |
+|---|---|
+| `config-revision.md` | Qué significa que una corrida realmente sirva |
+| `supervision-AAAA-MM-DD.md` | Si corrió, si cumplió y si respetó la frontera |
+| `cierre-s5.md` | Qué acción sigue, quién responde y en qué fecha |
+
+> **Outcome:** pasas de “creo que mi automatización funciona” a tener un semáforo defendible con evidencia y una siguiente acción fechada. Consulta [`s5-kit/OUTCOMES-Y-TIEMPOS.md`](s5-kit/OUTCOMES-Y-TIEMPOS.md) para ver la definición completa de terminado.
+
 > **Antes de iniciar S3 en Cowork:** no cambies las reglas del Project. Instala el único Skill de esa sesión, `s3-rutas/02-RUTAS/dist/s3-rutas-coach.zip`; este guía las fases y guarda el seguimiento en `s3-rutas/03-SALIDAS/PROGRESO-S3.md`, sin tocar S2.
 
-> **No abras un Project nuevo para S3, S4 o S5.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados. Para S4, el ZIP exterior `dist/s4-kit.zip` entrega toda la actividad; después, dentro de esa carpeta, `s4-kit/dist/s4-encadenar-coach.zip` es el único archivo que instalas como Skill. El coach te ayudará a crear un Skill distinto para tu proceso. En S5, el revisor necesita ver las evidencias anteriores y escribe únicamente en la carpeta de reportes que tú declares.
+> **No abras un Project nuevo para S3, S4 o S5.** Usa la misma carpeta para conservar tu PDF, memoria y outputs aprobados. Para S4, el ZIP exterior `dist/s4-kit.zip` entrega toda la actividad; después, dentro de esa carpeta, `s4-kit/dist/s4-encadenar-coach.zip` es el único archivo que instalas como Skill. El coach te ayudará a crear un Skill distinto para tu proceso. En S5, el revisor necesita ver las evidencias anteriores y escribe únicamente en `s5-kit/07-SALIDAS/`.
 
 ### Material adicional · no usar durante esta S3
 

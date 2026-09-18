@@ -4,6 +4,20 @@ Sesión 5 · Claude para Productividad · Nivel 2 · Collective Academy
 
 En S4 tu proceso quedó corriendo. En S5 no vas a construir otra automatización: vas a comprobar si la que ya tienes **corrió, produjo algo útil y respetó su frontera**. Si todavía no tienes un sistema funcionando, harás exactamente el mismo recorrido con un caso demo.
 
+## La promesa de S5
+
+**En 45 minutos con instalación previa —o 60 minutos instalando en clase— pasarás de “creo que funciona” a una decisión respaldada por evidencia.**
+
+| Archivo tangible | Qué demuestra | Para qué te sirve después |
+|---|---|---|
+| `config-revision.md` | Qué debe ocurrir para considerar útil una corrida | Evita evaluar con frases vagas como “salió bien” |
+| `supervision-AAAA-MM-DD.md` | Si corrió, si sirvió y si respetó la frontera | Permite decidir si usar, corregir o detener el resultado |
+| `cierre-s5.md` | Qué harás, quién responde y cuándo | Convierte el diagnóstico en una acción ejecutable |
+
+> **S5 está terminada cuando puedes defender esta frase con archivos:** “Mi semáforo es ___ porque encontré ___ en ___; antes del ___ voy a ___.”
+
+Consulta [`OUTCOMES-Y-TIEMPOS.md`](OUTCOMES-Y-TIEMPOS.md) para ver el contenido de cada entregable, los criterios de terminado y el valor operativo de la sesión.
+
 ## Empieza aquí
 
 1. **[Descarga `s5-kit.zip`](https://github.com/nabolom/ai-agente-opt-intermedio/raw/refs/heads/main/dist/s5-kit.zip)**.
@@ -36,6 +50,7 @@ La auditoría completa es el **segundo nivel**: hazla si terminas el mínimo o d
 | Carpeta o archivo | Para qué sirve |
 |---|---|
 | [`EMPIEZA-S5-AQUI.md`](EMPIEZA-S5-AQUI.md) | Vista rápida de la experiencia |
+| [`OUTCOMES-Y-TIEMPOS.md`](OUTCOMES-Y-TIEMPOS.md) | Tiempo, entregables, definición de terminado y valor |
 | [`INSTALAR-COACH-S5.md`](INSTALAR-COACH-S5.md) | Instalación sin editar archivos |
 | [`02-CONFIGURACION/`](02-CONFIGURACION/) | Referencias que usa el coach para ayudarte a definir criterios |
 | [`03-EJEMPLOS/`](03-EJEMPLOS/) | Ejemplos de supervisión y auditoría |

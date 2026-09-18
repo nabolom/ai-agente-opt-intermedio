@@ -30,6 +30,22 @@ No edites el ZIP del coach. La configuración se construye contigo durante la co
 
 Para facilitarla en vivo, elige la modalidad de **45 minutos con prework** o **60 minutos instalando en clase** en [`GUIA-FACILITADOR-S5.md`](GUIA-FACILITADOR-S5.md).
 
+## Tus tres archivos al final
+
+En `s5-kit/07-SALIDAS/` deben existir:
+
+1. `config-revision.md` con criterios que dos personas puedan evaluar igual.
+2. `supervision-AAAA-MM-DD.md` con semáforo, evidencia y máximo tres hallazgos.
+3. `cierre-s5.md` con siguiente paso, responsable y fecha.
+
+## Cómo sabes que terminaste
+
+Además de tener los tres archivos, debes poder explicar sin leer todo el reporte:
+
+> Mi semáforo es ___ porque encontré ___ en ___; antes del ___ voy a ___.
+
+Abre [`OUTCOMES-Y-TIEMPOS.md`](OUTCOMES-Y-TIEMPOS.md) para ver qué contiene cada archivo y por qué importa.
+
 ## Qué es obligatorio y qué es extensión
 
 | Bloque | Estado |

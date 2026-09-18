@@ -64,7 +64,7 @@ Antes del cierre, cada persona debe poder mostrar:
 1. `config-revision.md`.
 2. `supervision-AAAA-MM-DD.md`.
 3. `cierre-s5.md`.
-4. Una frase oral: “Mi semáforo es ___ porque encontré ___; antes del viernes haré ___.”
+4. Una frase oral: “Mi semáforo es ___ porque encontré ___ en ___; antes del viernes haré ___.”
 
 ## Plan B
 

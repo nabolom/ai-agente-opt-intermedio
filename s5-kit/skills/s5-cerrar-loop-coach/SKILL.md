@@ -28,11 +28,12 @@ Trabajar dentro del mismo Project usado en S2, S3 y S4.
 Leer, cuando existan y en este orden:
 
 1. `s5-kit/EMPIEZA-S5-AQUI.md`.
-2. `s5-kit/07-SALIDAS/PROGRESO-S5.md`.
-3. `s4-kit/04-SALIDAS/gate-s5.md` o `s4-kit/03-GATE-S5/CHECKLIST-GATE.md`.
-4. `s4-kit/04-SALIDAS/frontera.md` y `s4-kit/04-SALIDAS/recorte-v1-v2.md`.
-5. El output más reciente del proceso y sus fuentes, si están dentro del Project.
-6. Solo los materiales S5 necesarios para la fase activa.
+2. `s5-kit/OUTCOMES-Y-TIEMPOS.md`.
+3. `s5-kit/07-SALIDAS/PROGRESO-S5.md`.
+4. `s4-kit/04-SALIDAS/gate-s5.md` o `s4-kit/03-GATE-S5/CHECKLIST-GATE.md`.
+5. `s4-kit/04-SALIDAS/frontera.md` y `s4-kit/04-SALIDAS/recorte-v1-v2.md`.
+6. El output más reciente del proceso y sus fuentes, si están dentro del Project.
+7. Solo los materiales S5 necesarios para la fase activa.
 
 Escribir únicamente dentro de `s5-kit/07-SALIDAS/`, después de mostrar un borrador y recibir confirmación.
 
@@ -109,7 +110,7 @@ Para ruta verde o recuperación:
 
 Para ruta demo, leer `s5-kit/04-SIN-SISTEMA/CONFIG-demo.md`, mostrarlo y pedir confirmación de uso; no pedir rutas locales.
 
-Guardar el bloque confirmado en `s5-kit/07-SALIDAS/config-revision.md`. La carpeta de reportes siempre será `s5-kit/07-SALIDAS/`; no pedir que la persona cree otra.
+Leer `s5-kit/07-SALIDAS/PLANTILLA-config-revision.md` y usar su estructura. Guardar el bloque confirmado en `s5-kit/07-SALIDAS/config-revision.md`. La carpeta de reportes siempre será `s5-kit/07-SALIDAS/`; no pedir que la persona cree otra.
 
 **Gate:** no avanzar mientras un campo obligatorio diga `POR CONFIRMAR` o un criterio siga siendo una opinión.
 
@@ -141,7 +142,7 @@ Aplicar esta jerarquía de evidencia: `OBSERVADA EN ARCHIVO O HISTORIAL` > `CONF
 
 Para la frontera, usar `RESPETADA` solo si existe archivo, historial o registro de ejecución que lo demuestre. Si el output termina en borrador pero no puede observarse el sistema externo, usar `SIN EVIDENCIA DE CRUCE`; esto limita el semáforo a amarillo.
 
-Mostrar un borrador con: Semáforo, Estado de ejecución, tabla de Criterios, Hallazgos, Frontera y máximo tres acciones propuestas. Guardar tras confirmación como `s5-kit/07-SALIDAS/supervision-AAAA-MM-DD.md`, usando la **fecha de revisión** en el nombre y mostrando dentro la fecha de la corrida.
+Leer `s5-kit/07-SALIDAS/PLANTILLA-supervision.md` y usar su estructura. Mostrar el borrador completo y guardar tras confirmación como `s5-kit/07-SALIDAS/supervision-AAAA-MM-DD.md`, usando la **fecha de revisión** en el nombre y mostrando dentro la fecha de la corrida.
 
 **Semáforo:** aplicar en este orden. Rojo si no corrió, cruzó la frontera, fallan dos o más criterios, o falla el criterio que la persona confirmó como crítico. Amarillo si corrió pero falla un criterio no crítico, tiene un `NO DETERMINADO` relevante o la frontera solo tiene `SIN EVIDENCIA DE CRUCE`. Verde únicamente si corrió dentro de la ventana, todos los criterios cumplen y la frontera tiene evidencia observable. Si dudas entre dos colores, elegir el más conservador y explicar por qué.
 
@@ -175,7 +176,7 @@ Proponer un solo siguiente paso: el que devuelve más tiempo con menor bloqueo. 
 
 **Microlección:** cerrar el loop no significa reparar todo. Significa saber qué pasó y comprometer la siguiente acción observable.
 
-Pedir una acción, responsable y fecha. No aceptar “mejorarlo”, “revisarlo” o “verlo después”. Mostrar y guardar `s5-kit/07-SALIDAS/cierre-s5.md` con:
+Pedir una acción, responsable y fecha. No aceptar “mejorarlo”, “revisarlo” o “verlo después”. Leer `s5-kit/07-SALIDAS/PLANTILLA-cierre-s5.md`, usar su estructura y guardar `s5-kit/07-SALIDAS/cierre-s5.md` con:
 
 - proceso propio o demo;
 - color y evidencia principal;
@@ -187,6 +188,8 @@ Pedir una acción, responsable y fecha. No aceptar “mejorarlo”, “revisarlo
 Cerrar con esta frase para completar oralmente:
 
 > Mi semáforo es ___ porque ___; antes del ___ voy a ___.
+
+Antes de declarar S5 completa, leer la definición de terminado en `s5-kit/OUTCOMES-Y-TIEMPOS.md` y comprobar sus cinco casillas. Si falta alguna, nombrar exactamente cuál; no afirmar que terminó.
 
 ## Progreso
 

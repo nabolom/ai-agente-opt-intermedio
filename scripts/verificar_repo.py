@@ -70,6 +70,7 @@ REQUIRED = [
     's4-kit/skills/s4-encadenar-coach/examples/trigger-tests.md',
     's4-kit/dist/s4-encadenar-coach.zip',
     's5-kit/README.md',
+    's5-kit/OUTCOMES-Y-TIEMPOS.md',
     's5-kit/EMPIEZA-S5-AQUI.md',
     's5-kit/INSTALAR-COACH-S5.md',
     's5-kit/INICIAR-S5-SIN-SKILL.md',
@@ -94,6 +95,9 @@ REQUIRED = [
     's5-kit/06-CIERRE/SHOWROOM-formato.md',
     's5-kit/07-SALIDAS/README.md',
     's5-kit/07-SALIDAS/PROGRESO-S5.md',
+    's5-kit/07-SALIDAS/PLANTILLA-config-revision.md',
+    's5-kit/07-SALIDAS/PLANTILLA-supervision.md',
+    's5-kit/07-SALIDAS/PLANTILLA-cierre-s5.md',
     's5-kit/skills/s5-cerrar-loop-coach/SKILL.md',
     's5-kit/dist/s5-cerrar-loop-coach.zip',
 ]
@@ -174,6 +178,8 @@ for phrase in (
     'dist/s5-kit.zip',
     's5-cerrar-loop-coach.zip',
     'Inicia mi S5.',
+    '### S5 · Tiempo, entregables y valor',
+    's5-kit/OUTCOMES-Y-TIEMPOS.md',
     'No abras un Project nuevo',
 ):
     if phrase not in readme:
@@ -271,8 +277,8 @@ for phrase in ('/schedule', 'Dispara la tarea manualmente una vez', 'archivos o 
 
 s5_root = ROOT / 's5-kit'
 s5_files = [path for path in s5_root.rglob('*') if path.is_file()]
-if len(s5_files) != 27:
-    fail(f's5-kit debe tener 27 archivos y tiene {len(s5_files)}')
+if len(s5_files) != 31:
+    fail(f's5-kit debe tener 31 archivos y tiene {len(s5_files)}')
 
 for removed in (
     '01-SKILL/INSTALACION.md',
@@ -313,6 +319,10 @@ for phrase in (
     'Si faltan dos evidencias recuperables',
     'fallan dos o más criterios',
     'usando la **fecha de revisión**',
+    'PLANTILLA-config-revision.md',
+    'PLANTILLA-supervision.md',
+    'PLANTILLA-cierre-s5.md',
+    'definición de terminado',
 ):
     if phrase not in s5_coach:
         fail(f'el coach S5 no cubre: {phrase}')
